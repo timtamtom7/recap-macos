@@ -35,6 +35,7 @@ targets:
         COMBINE_HIDPI_IMAGES: YES
         SCREEN_CAPTURE_USAGE_DESCRIPTION: "RECAP needs screen recording access to capture your screen."
         MICROPHONE_USAGE_DESCRIPTION: "RECAP needs microphone access to record audio with your screen recording."
+        COMBINE_HIDPI_IMAGES: YES
     dependencies:
       - package: SQLite
 
