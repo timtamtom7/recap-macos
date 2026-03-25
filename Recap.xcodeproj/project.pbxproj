@@ -29,6 +29,7 @@
 		6F3EA1BB8BA85C690EFC6743 /* CloudSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE2A3FD902BD748BCE59AB4 /* CloudSyncService.swift */; };
 		72D68D12AFD120D2214906B3 /* RecordingsLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454A0BAE74750DAA616C28B /* RecordingsLibraryView.swift */; };
 		72FBEDB4D7C20E7B96087A5C /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = F803E5B8A2A9B107C2364A67 /* SQLite */; };
+		785D4C8433185FCF874097A1 /* AdvancedServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABAAFFA0D2DBF3A49AFF6F6 /* AdvancedServices.swift */; };
 		7ABD489E0E74AB150625BC52 /* MultiDisplayCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F383260A2CF01F2A5DEE8E9 /* MultiDisplayCaptureService.swift */; };
 		7C8F87D869D25A66891C56E4 /* TrimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E25B0E9980C8AC7439A954 /* TrimmerView.swift */; };
 		7FE5414F2CAEC3F7D1C4F4AE /* GlobalHotkeyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9E384D23B9015DF6E85053 /* GlobalHotkeyService.swift */; };
@@ -101,6 +102,7 @@
 		905FAA282C65ACCB3D499359 /* RECAPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RECAPApp.swift; sourceTree = "<group>"; };
 		9874FA2AFA3229D0BBF2F635 /* ScreenRecordSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenRecordSession.swift; sourceTree = "<group>"; };
 		99254AE7C569658069BDD9D8 /* ScheduledRecordingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledRecordingService.swift; sourceTree = "<group>"; };
+		9ABAAFFA0D2DBF3A49AFF6F6 /* AdvancedServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedServices.swift; sourceTree = "<group>"; };
 		9DE2A3FD902BD748BCE59AB4 /* CloudSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudSyncService.swift; sourceTree = "<group>"; };
 		9E725D9C97A2AA6446DDD48A /* RECAP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RECAP.entitlements; sourceTree = "<group>"; };
 		A00D0E3231A722D2130ABD43 /* CloudUploadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudUploadService.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 		D1292A81A25404FB492C7220 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				9ABAAFFA0D2DBF3A49AFF6F6 /* AdvancedServices.swift */,
 				00E6CD0BA2504B3A42A5B338 /* AnnotationEngine.swift */,
 				B8683B937F2C57DE45FC77F8 /* AnnotationProjectStore.swift */,
 				749C1EC5215C98FD40736CD9 /* AutomationService.swift */,
@@ -356,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				785D4C8433185FCF874097A1 /* AdvancedServices.swift in Sources */,
 				64A68AD460FBBDC2E6299BD4 /* AnnotationCanvasView.swift in Sources */,
 				39B055ACA3A4B67DCA8B3023 /* AnnotationEditorView.swift in Sources */,
 				2163AC543BD30F4FFBA257A2 /* AnnotationEngine.swift in Sources */,
