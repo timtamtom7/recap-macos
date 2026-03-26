@@ -93,7 +93,7 @@ struct RecordingsLibraryView: View {
                     }
                 }
                 .scrollContentBackground(.hidden)
-                .background(.ultraThinMaterial)
+                .background(Color(NSColor.windowBackgroundColor))
             }
         }
         .sheet(isPresented: $showExportSheet) {
@@ -119,13 +119,17 @@ struct RecordingGridItem: View {
     var body: some View {
         VStack(spacing: 12) {
             RoundedRectangle(cornerRadius: 12)
-                .fill(.ultraThinMaterial)
+                .fill(Color(NSColor.controlBackgroundColor))
                 .frame(height: 120)
                 .overlay {
                     Image(systemName: "film.fill")
                         .font(.system(size: 32))
                         .foregroundColor(.secondary)
                 }
+                .overlay(
+                    RoundedRectangle(cornerRadius: 12)
+                        .stroke(Color(NSColor.separatorColor), lineWidth: 0.5)
+                )
 
             VStack(spacing: 4) {
                 Text(recording.title)
@@ -142,8 +146,14 @@ struct RecordingGridItem: View {
             }
         }
         .padding(16)
-        .background(.ultraThinMaterial)
-        .clipShape(RoundedRectangle(cornerRadius: 16))
+        .background(
+            RoundedRectangle(cornerRadius: 16)
+                .fill(Color(NSColor.controlBackgroundColor))
+        )
+        .overlay(
+            RoundedRectangle(cornerRadius: 16)
+                .stroke(Color(NSColor.separatorColor), lineWidth: 0.5)
+        )
     }
 }
 
@@ -153,12 +163,16 @@ struct RecordingRowView: View {
     var body: some View {
         HStack(spacing: 16) {
             RoundedRectangle(cornerRadius: 8)
-                .fill(.ultraThinMaterial)
+                .fill(Color(NSColor.controlBackgroundColor))
                 .frame(width: 120, height: 68)
                 .overlay {
                     Image(systemName: "film.fill")
                         .foregroundColor(.secondary)
                 }
+                .overlay(
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(Color(NSColor.separatorColor), lineWidth: 0.5)
+                )
 
             VStack(alignment: .leading, spacing: 4) {
                 Text(recording.title)
@@ -185,7 +199,13 @@ struct RecordingRowView: View {
                 .foregroundColor(.secondary)
         }
         .padding(16)
-        .background(.ultraThinMaterial)
-        .clipShape(RoundedRectangle(cornerRadius: 12))
+        .background(
+            RoundedRectangle(cornerRadius: 12)
+                .fill(Color(NSColor.controlBackgroundColor))
+        )
+        .overlay(
+            RoundedRectangle(cornerRadius: 12)
+                .stroke(Color(NSColor.separatorColor), lineWidth: 0.5)
+        )
     }
 }

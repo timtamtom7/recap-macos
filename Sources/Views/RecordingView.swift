@@ -9,53 +9,11 @@ struct RecordingView: View {
 
     var body: some View {
         VStack(spacing: 24) {
-            ZStack {
-                RoundedRectangle(cornerRadius: 16)
-                    .fill(.ultraThinMaterial)
-                    .background(.ultraThinMaterial)
-
-                if let display = appState.selectedDisplay {
-                    VStack(spacing: 12) {
-                        Text("Recording: \(display.name)")
-                            .font(.title3.weight(.semibold))
-                            .foregroundColor(.primary)
-
-                        Text("\(Int(display.resolution.width)) × \(Int(display.resolution.height))")
-                            .font(.body)
-                            .foregroundColor(.secondary)
-                    }
-                } else {
-                    VStack(spacing: 16) {
-                        Image(systemName: "record.circle.fill")
-                            .font(.system(size: 64))
-                            .foregroundColor(.secondary)
-
-                        Text("Select a display to record")
-                            .font(.title3.weight(.medium))
-                            .foregroundColor(.secondary)
-
-                        Button("Choose Display") {
-                            showDisplayPicker = true
-                        }
-                        .buttonStyle(.borderedProminent)
-                        .controlSize(.large)
-                    }
-                }
-            }
-            .frame(maxWidth: .infinity, maxHeight: 400)
-            .padding(8)
+            previewCard
+                .frame(maxWidth: .infinity, maxHeight: 400)
 
             if appState.isRecording {
-                HStack {
-                    Circle()
-                        .fill(appState.recordingState == .recording ? Color.red : Color.orange)
-                        .frame(width: 12, height: 12)
-                        .modifier(PulseModifier(isAnimating: appState.recordingState == .recording))
-
-                    Text(appState.formattedElapsedTime)
-                        .font(.system(size: 36, weight: .bold, design: .monospaced))
-                        .foregroundColor(.primary)
-                }
+                recordingTimer
             }
 
             ControlBarView()
@@ -63,29 +21,96 @@ struct RecordingView: View {
                 .environmentObject(recordingVM)
 
             if !appState.recentRecordings.isEmpty {
-                VStack(alignment: .leading, spacing: 12) {
-                    Text("Recent")
-                        .font(.title3.weight(.semibold))
-                        .padding(.horizontal, 8)
-
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(spacing: 16) {
-                            ForEach(appState.recentRecordings.prefix(5)) { recording in
-                                RecordingThumbnail(recording: recording)
-                                    .onTapGesture {
-                                        NSWorkspace.shared.activateFileViewerSelecting([recording.filePath])
-                                    }
-                            }
-                        }
-                        .padding(.horizontal, 8)
-                    }
-                }
+                recentRecordingsSection
             }
+
+            Spacer()
         }
         .padding(24)
         .sheet(isPresented: $showDisplayPicker) {
             DisplayPickerView()
                 .environmentObject(appState)
+        }
+    }
+
+    private var previewCard: some View {
+        VStack(spacing: 16) {
+            if let display = appState.selectedDisplay {
+                VStack(spacing: 8) {
+                    Image(systemName: "display")
+                        .font(.system(size: 48))
+                        .foregroundColor(.accentColor)
+
+                    Text("Recording: \(display.name)")
+                        .font(.headline)
+
+                    Text("\(Int(display.resolution.width)) × \(Int(display.resolution.height))")
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                }
+            } else {
+                VStack(spacing: 16) {
+                    Image(systemName: "record.circle")
+                        .font(.system(size: 64))
+                        .foregroundColor(.secondary)
+
+                    Text("Select a display to record")
+                        .font(.headline)
+                        .foregroundColor(.secondary)
+
+                    Button("Choose Display") {
+                        showDisplayPicker = true
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .controlSize(.large)
+                }
+            }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(
+            RoundedRectangle(cornerRadius: 16)
+                .fill(Color(NSColor.controlBackgroundColor))
+        )
+        .overlay(
+            RoundedRectangle(cornerRadius: 16)
+                .stroke(Color(NSColor.separatorColor), lineWidth: 1)
+        )
+    }
+
+    private var recordingTimer: some View {
+        HStack(spacing: 12) {
+            Circle()
+                .fill(Color.red)
+                .frame(width: 12, height: 12)
+                .modifier(PulseModifier(isAnimating: appState.recordingState == .recording))
+
+            Text(appState.formattedElapsedTime)
+                .font(.system(size: 32, weight: .medium, design: .monospaced))
+                .monospacedDigit()
+        }
+        .padding(.horizontal, 24)
+        .padding(.vertical, 12)
+        .background(
+            RoundedRectangle(cornerRadius: 12)
+                .fill(.ultraThinMaterial)
+        )
+    }
+
+    private var recentRecordingsSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("Recent Recordings")
+                .font(.headline)
+
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 12) {
+                    ForEach(appState.recentRecordings.prefix(5)) { recording in
+                        RecordingThumbnail(recording: recording)
+                            .onTapGesture {
+                                NSWorkspace.shared.activateFileViewerSelecting([recording.filePath])
+                            }
+                    }
+                }
+            }
         }
     }
 }
@@ -114,22 +139,28 @@ struct RecordingThumbnail: View {
 
     var body: some View {
         VStack(spacing: 8) {
-            RoundedRectangle(cornerRadius: 10)
-                .fill(.ultraThinMaterial)
+            RoundedRectangle(cornerRadius: 8)
+                .fill(Color(NSColor.controlBackgroundColor))
                 .frame(width: 160, height: 90)
                 .overlay {
-                    Image(systemName: "film.fill")
+                    Image(systemName: "film")
                         .font(.title2)
                         .foregroundColor(.secondary)
                 }
+                .overlay(
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(Color(NSColor.separatorColor), lineWidth: 0.5)
+                )
 
-            Text(recording.title)
-                .font(.caption.weight(.medium))
-                .lineLimit(1)
+            VStack(spacing: 2) {
+                Text(recording.title)
+                    .font(.caption.weight(.medium))
+                    .lineLimit(1)
 
-            Text(recording.formattedDuration)
-                .font(.caption2)
-                .foregroundColor(.secondary)
+                Text(recording.formattedDuration)
+                    .font(.caption2)
+                    .foregroundColor(.secondary)
+            }
         }
     }
 }

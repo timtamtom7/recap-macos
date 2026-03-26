@@ -12,9 +12,9 @@ struct ContentView: View {
 
         var icon: String {
             switch self {
-            case .record: return "record.circle.fill"
-            case .library: return "film.stack.fill"
-            case .settings: return "gearshape.fill"
+            case .record: return "record.circle"
+            case .library: return "film.stack"
+            case .settings: return "gearshape"
             }
         }
     }
@@ -22,46 +22,99 @@ struct ContentView: View {
     var body: some View {
         NavigationSplitView {
             SidebarView(selectedTab: $selectedTab)
-                .navigationSplitViewColumnWidth(min: 200, ideal: 220, max: 280)
         } detail: {
-            switch selectedTab {
-            case .record:
-                RecordingView()
-                    .environmentObject(appState)
-                    .environmentObject(recordingVM)
-            case .library:
-                RecordingsLibraryView()
-                    .environmentObject(appState)
-            case .settings:
-                SettingsView()
-                    .environmentObject(appState)
-            }
+            currentDetailView
         }
-        .frame(minWidth: 700, minHeight: 500)
+        .navigationSplitViewStyle(.balanced)
+        .frame(minWidth: 800, minHeight: 600)
+    }
+
+    @ViewBuilder
+    private var currentDetailView: some View {
+        switch selectedTab {
+        case .record:
+            RecordingView()
+                .environmentObject(appState)
+                .environmentObject(recordingVM)
+        case .library:
+            RecordingsLibraryView()
+                .environmentObject(appState)
+        case .settings:
+            SettingsView()
+                .environmentObject(appState)
+        }
     }
 }
 
 struct SidebarView: View {
     @Binding var selectedTab: ContentView.Tab
+    @EnvironmentObject var appState: AppState
 
     var body: some View {
-        List(ContentView.Tab.allCases, id: \.self, selection: $selectedTab) { tab in
-            Button {
-                selectedTab = tab
-            } label: {
-                Label(tab.rawValue, systemImage: tab.icon)
-                    .font(.title3.weight(.semibold))
+        VStack(alignment: .leading, spacing: 0) {
+            VStack(alignment: .leading, spacing: 4) {
+                Text("RECAP")
+                    .font(.title.weight(.bold))
+                    .foregroundColor(.primary)
+                Text("Screen Recorder")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
             }
-            .buttonStyle(.plain)
-            .listRowBackground(
-                RoundedRectangle(cornerRadius: 10)
-                    .fill(selectedTab == tab ? Color.accentColor.opacity(0.2) : Color.clear)
-                    .padding(.vertical, 4)
-            )
+            .padding(.horizontal, 16)
+            .padding(.vertical, 20)
+            .frame(maxWidth: .infinity, alignment: .leading)
+
+            Divider()
+                .padding(.horizontal, 12)
+
+            VStack(spacing: 4) {
+                ForEach(ContentView.Tab.allCases, id: \.self) { tab in
+                    Button {
+                        selectedTab = tab
+                    } label: {
+                        Label(tab.rawValue, systemImage: tab.icon)
+                            .font(.body)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+                    .buttonStyle(.plain)
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 10)
+                    .background(
+                        RoundedRectangle(cornerRadius: 8)
+                            .fill(selectedTab == tab ? Color.accentColor.opacity(0.15) : Color.clear)
+                    )
+                }
+            }
+            .padding(.vertical, 8)
+
+            Spacer()
+
+            if appState.isRecording {
+                HStack(spacing: 8) {
+                    Circle()
+                        .fill(.red)
+                        .frame(width: 8, height: 8)
+                    Text("Recording")
+                        .font(.caption.weight(.medium))
+                        .foregroundColor(.primary)
+                }
+                .padding(.horizontal, 16)
+                .padding(.vertical, 10)
+                .background(
+                    RoundedRectangle(cornerRadius: 8)
+                        .fill(.ultraThinMaterial)
+                )
+                .padding(.horizontal, 12)
+                .padding(.bottom, 16)
+            }
         }
-        .listStyle(.sidebar)
-        .scrollContentBackground(.hidden)
-        .background(.ultraThinMaterial)
+        .background(
+            Color(NSColor.windowBackgroundColor)
+                .overlay(
+                    Color(NSColor.controlBackgroundColor)
+                        .opacity(0.5)
+                )
+        )
     }
 }
 
@@ -99,7 +152,7 @@ struct SettingsView: View {
         }
         .formStyle(.grouped)
         .scrollContentBackground(.hidden)
-        .background(.ultraThinMaterial)
+        .background(Color(NSColor.windowBackgroundColor))
         .frame(width: 400, height: 350)
     }
 }
