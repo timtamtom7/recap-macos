@@ -76,11 +76,11 @@ struct ControlBarView: View {
         .padding(.horizontal, 24)
         .padding(.vertical, 16)
         .background(
-            RoundedRectangle(cornerRadius: 16)
+            RoundedRectangle(cornerRadius: 12)
                 .fill(Color(NSColor.controlBackgroundColor))
         )
         .overlay(
-            RoundedRectangle(cornerRadius: 16)
+            RoundedRectangle(cornerRadius: 12)
                 .stroke(Color(NSColor.separatorColor), lineWidth: 1)
         )
     }
