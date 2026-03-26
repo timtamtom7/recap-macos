@@ -15,6 +15,7 @@
 		2A373A3DAB2E3DDF4CB1617C /* TimestampSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D43C617BEE67171DE7C956 /* TimestampSettingsView.swift */; };
 		39B055ACA3A4B67DCA8B3023 /* AnnotationEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97C31B856910E8C84DA5EB5 /* AnnotationEditorView.swift */; };
 		3D94476E5302A6837F8BA5E9 /* GIFExportOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3219B381B4DBE33081752D /* GIFExportOptions.swift */; };
+		3E325D5194A1146BB8555EC7 /* RecordingIntelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79394FF59683C64702DC0ED8 /* RecordingIntelligence.swift */; };
 		42FAA7B455922372E64F139C /* GIFExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85528080400887C8E4983C77 /* GIFExportService.swift */; };
 		440703489BB9EA3847CF4013 /* AnnotationProjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8683B937F2C57DE45FC77F8 /* AnnotationProjectStore.swift */; };
 		46A43B7F03C7A6D4B01886DD /* MenuBarPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0674DB13A5FFD809A7E46C8 /* MenuBarPopoverView.swift */; };
@@ -94,6 +95,7 @@
 		698FA0349B9ADEBE1BE6BDD9 /* DisplayPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayPickerView.swift; sourceTree = "<group>"; };
 		749C1EC5215C98FD40736CD9 /* AutomationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomationService.swift; sourceTree = "<group>"; };
 		76615E93EFE2F0C152FA8D3D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		79394FF59683C64702DC0ED8 /* RecordingIntelligence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingIntelligence.swift; sourceTree = "<group>"; };
 		7BC5302E9C72349328664F31 /* MetadataEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataEditorView.swift; sourceTree = "<group>"; };
 		82EF0181C2B0E399230E30DE /* RecordingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewModel.swift; sourceTree = "<group>"; };
 		8454A0BAE74750DAA616C28B /* RecordingsLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsLibraryView.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 		4E817FA0DAC486603374F985 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				79394FF59683C64702DC0ED8 /* RecordingIntelligence.swift */,
 				27D51186941C73C5993773DE /* App */,
 				DCF7751A521C96060C198AE8 /* Intents */,
 				D04A6A58196FC43C6140E27B /* MenuBar */,
@@ -397,6 +400,7 @@
 				BA87B6FAA71E632F2492FE28 /* RECAPApp.swift in Sources */,
 				49FBF79DAAB39511D5DA187A /* RECAPIntents.swift in Sources */,
 				E3ADC552B8AE1AC13D1EEBA3 /* Recording.swift in Sources */,
+				3E325D5194A1146BB8555EC7 /* RecordingIntelligence.swift in Sources */,
 				E228A2D7A70A9C8C05D88555 /* RecordingState.swift in Sources */,
 				6B6AE1829DB68CCC67072362 /* RecordingStore.swift in Sources */,
 				4D8FBE5E114357EDFC4D277A /* RecordingView.swift in Sources */,

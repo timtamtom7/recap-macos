@@ -1,0 +1,579 @@
+{
+  "" : {
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAP-primary.dia",
+    "emit-module-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAP-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAP-primary-emit-module.dia",
+    "pch" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAP-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAP-primary.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/App/AppDelegate.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AppDelegate.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AppDelegate.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AppDelegate.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AppDelegate.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AppDelegate~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/App/AppState.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AppState.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AppState.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AppState.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AppState.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AppState.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AppState.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AppState.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AppState~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/App/MainWindowController.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MainWindowController.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MainWindowController.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MainWindowController.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MainWindowController.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MainWindowController.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MainWindowController.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MainWindowController.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MainWindowController~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/App/RECAPApp.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAPApp.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAPApp.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAPApp.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAPApp.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAPApp.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAPApp.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAPApp.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAPApp~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/App/main.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/main.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/main.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/main.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/main.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/main.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/main.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/main.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/main~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Intents/RECAPIntents.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAPIntents.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAPIntents.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAPIntents.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAPIntents.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAPIntents.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAPIntents.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAPIntents.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAPIntents~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/MenuBar/MenuBarController.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MenuBarController.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MenuBarController.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MenuBarController.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MenuBarController.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MenuBarController.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MenuBarController.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MenuBarController.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MenuBarController~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/MenuBar/MenuBarPopoverView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MenuBarPopoverView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MenuBarPopoverView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MenuBarPopoverView.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MenuBarPopoverView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MenuBarPopoverView.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MenuBarPopoverView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MenuBarPopoverView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MenuBarPopoverView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Models/AnnotationTool.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationTool.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationTool.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationTool.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationTool.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationTool.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationTool.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationTool.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationTool~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Models/GIFExportOptions.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportOptions.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportOptions.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportOptions.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportOptions.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportOptions.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportOptions.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportOptions.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportOptions~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Models/Recording.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/Recording.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/Recording.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/Recording.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/Recording.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/Recording.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/Recording.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/Recording.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/Recording~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Models/RecordingState.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingState.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingState.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingState.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingState.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingState.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingState.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingState.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingState~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/RecordingIntelligence.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingIntelligence.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingIntelligence.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingIntelligence.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingIntelligence.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingIntelligence.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingIntelligence.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingIntelligence.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingIntelligence~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/AdvancedServices.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AdvancedServices.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AdvancedServices.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AdvancedServices.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AdvancedServices.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AdvancedServices.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AdvancedServices.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AdvancedServices.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AdvancedServices~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/AnnotationEngine.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationEngine.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationEngine.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationEngine.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationEngine.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationEngine.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationEngine.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationEngine.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationEngine~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/AnnotationProjectStore.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationProjectStore.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationProjectStore.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationProjectStore.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationProjectStore.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationProjectStore.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationProjectStore.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationProjectStore.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationProjectStore~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/AutomationService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AutomationService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AutomationService.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AutomationService.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AutomationService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AutomationService.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AutomationService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AutomationService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AutomationService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/ClickDetector.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ClickDetector.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ClickDetector.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ClickDetector.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ClickDetector.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ClickDetector.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ClickDetector.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ClickDetector.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ClickDetector~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/CloudSyncService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CloudSyncService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CloudSyncService.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CloudSyncService.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CloudSyncService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CloudSyncService.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CloudSyncService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CloudSyncService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CloudSyncService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/CloudUploadService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CloudUploadService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CloudUploadService.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CloudUploadService.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CloudUploadService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CloudUploadService.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CloudUploadService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CloudUploadService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CloudUploadService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/CropService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CropService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CropService.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CropService.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CropService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CropService.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CropService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CropService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CropService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/DiskSpaceMonitor.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DiskSpaceMonitor.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DiskSpaceMonitor.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DiskSpaceMonitor.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DiskSpaceMonitor.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DiskSpaceMonitor.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DiskSpaceMonitor.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DiskSpaceMonitor.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DiskSpaceMonitor~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/DisplayCompositor.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayCompositor.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayCompositor.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayCompositor.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayCompositor.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayCompositor.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayCompositor.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayCompositor.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayCompositor~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/ExportService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ExportService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ExportService.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ExportService.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ExportService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ExportService.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ExportService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ExportService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ExportService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/GIFExportService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportService.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportService.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportService.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/GlobalHotkeyService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GlobalHotkeyService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GlobalHotkeyService.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GlobalHotkeyService.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GlobalHotkeyService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GlobalHotkeyService.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GlobalHotkeyService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GlobalHotkeyService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GlobalHotkeyService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/MultiDisplayCaptureService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MultiDisplayCaptureService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MultiDisplayCaptureService.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MultiDisplayCaptureService.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MultiDisplayCaptureService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MultiDisplayCaptureService.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MultiDisplayCaptureService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MultiDisplayCaptureService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MultiDisplayCaptureService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/RecordingStore.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingStore.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingStore.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingStore.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingStore.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingStore.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingStore.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingStore.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingStore~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/ScheduledRecordingService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduledRecordingService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduledRecordingService.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduledRecordingService.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduledRecordingService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduledRecordingService.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduledRecordingService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduledRecordingService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduledRecordingService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/ScreenCaptureService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScreenCaptureService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScreenCaptureService.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScreenCaptureService.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScreenCaptureService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScreenCaptureService.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScreenCaptureService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScreenCaptureService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScreenCaptureService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/ScreenRecordSession.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScreenRecordSession.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScreenRecordSession.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScreenRecordSession.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScreenRecordSession.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScreenRecordSession.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScreenRecordSession.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScreenRecordSession.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScreenRecordSession~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/ShareService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ShareService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ShareService.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ShareService.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ShareService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ShareService.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ShareService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ShareService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ShareService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/ThumbnailGenerator.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ThumbnailGenerator.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ThumbnailGenerator.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ThumbnailGenerator.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ThumbnailGenerator.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ThumbnailGenerator.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ThumbnailGenerator.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ThumbnailGenerator.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ThumbnailGenerator~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/TimestampOverlayService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TimestampOverlayService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TimestampOverlayService.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TimestampOverlayService.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TimestampOverlayService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TimestampOverlayService.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TimestampOverlayService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TimestampOverlayService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TimestampOverlayService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/TrimService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TrimService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TrimService.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TrimService.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TrimService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TrimService.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TrimService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TrimService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TrimService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/ViewModels/LibraryViewModel.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/LibraryViewModel.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/LibraryViewModel.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/LibraryViewModel.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/LibraryViewModel.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/LibraryViewModel.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/LibraryViewModel.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/LibraryViewModel.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/LibraryViewModel~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/ViewModels/RecordingViewModel.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingViewModel.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingViewModel.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingViewModel.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingViewModel.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingViewModel.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingViewModel.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingViewModel.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingViewModel~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/AnnotationCanvasView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationCanvasView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationCanvasView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationCanvasView.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationCanvasView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationCanvasView.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationCanvasView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationCanvasView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationCanvasView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/AnnotationEditorView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationEditorView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationEditorView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationEditorView.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationEditorView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationEditorView.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationEditorView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationEditorView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationEditorView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/AnnotationToolbar.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationToolbar.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationToolbar.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationToolbar.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationToolbar.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationToolbar.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationToolbar.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationToolbar.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/AnnotationToolbar~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/ContentView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/ControlBarView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ControlBarView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ControlBarView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ControlBarView.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ControlBarView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ControlBarView.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ControlBarView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ControlBarView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ControlBarView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/CountdownOverlayView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CountdownOverlayView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CountdownOverlayView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CountdownOverlayView.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CountdownOverlayView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CountdownOverlayView.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CountdownOverlayView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CountdownOverlayView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CountdownOverlayView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/CropOverlayView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CropOverlayView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CropOverlayView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CropOverlayView.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CropOverlayView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CropOverlayView.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CropOverlayView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CropOverlayView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CropOverlayView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/DisplayPickerView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayPickerView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayPickerView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayPickerView.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayPickerView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayPickerView.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayPickerView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayPickerView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayPickerView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/ExportSettingsSheet.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ExportSettingsSheet.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ExportSettingsSheet.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ExportSettingsSheet.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ExportSettingsSheet.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ExportSettingsSheet.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ExportSettingsSheet.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ExportSettingsSheet.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ExportSettingsSheet~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/GIFExportSheet.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportSheet.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportSheet.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportSheet.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportSheet.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportSheet.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportSheet.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportSheet.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportSheet~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/HotkeySettingsView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/HotkeySettingsView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/HotkeySettingsView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/HotkeySettingsView.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/HotkeySettingsView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/HotkeySettingsView.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/HotkeySettingsView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/HotkeySettingsView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/HotkeySettingsView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/MetadataEditorView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MetadataEditorView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MetadataEditorView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MetadataEditorView.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MetadataEditorView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MetadataEditorView.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MetadataEditorView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MetadataEditorView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MetadataEditorView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/MultiDisplaySelectorView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MultiDisplaySelectorView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MultiDisplaySelectorView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MultiDisplaySelectorView.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MultiDisplaySelectorView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MultiDisplaySelectorView.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MultiDisplaySelectorView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MultiDisplaySelectorView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MultiDisplaySelectorView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/RecordingView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingView.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingView.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/RecordingsLibraryView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingsLibraryView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingsLibraryView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingsLibraryView.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingsLibraryView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingsLibraryView.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingsLibraryView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingsLibraryView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingsLibraryView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/ScheduleEditorView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduleEditorView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduleEditorView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduleEditorView.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduleEditorView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduleEditorView.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduleEditorView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduleEditorView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduleEditorView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/TimestampSettingsView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TimestampSettingsView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TimestampSettingsView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TimestampSettingsView.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TimestampSettingsView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TimestampSettingsView.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TimestampSettingsView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TimestampSettingsView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TimestampSettingsView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/TrimmerView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TrimmerView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TrimmerView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TrimmerView.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TrimmerView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TrimmerView.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TrimmerView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TrimmerView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TrimmerView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/WindowPickerView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/WindowPickerView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/WindowPickerView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/WindowPickerView.dia",
+    "index-unit-output-path" : "/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/WindowPickerView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/WindowPickerView.bc",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/WindowPickerView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/WindowPickerView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/WindowPickerView~partial.swiftmodule"
+  }
+}

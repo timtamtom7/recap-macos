@@ -1,0 +1,37 @@
+{
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/ScreenRecordSession.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScreenRecordSession.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScreenRecordSession.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScreenRecordSession.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScreenRecordSession.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScreenRecordSession.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/ShareService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ShareService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ShareService.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ShareService.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ShareService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ShareService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/ThumbnailGenerator.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ThumbnailGenerator.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ThumbnailGenerator.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ThumbnailGenerator.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ThumbnailGenerator.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ThumbnailGenerator.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/TimestampOverlayService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TimestampOverlayService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TimestampOverlayService.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TimestampOverlayService.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TimestampOverlayService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TimestampOverlayService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/TimestampSettingsView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TimestampSettingsView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TimestampSettingsView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TimestampSettingsView.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TimestampSettingsView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/TimestampSettingsView.swiftdeps"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "/Users/mauriello/Dev/recap-macos/Sources/Models/GIFExportOptions.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportOptions.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportOptions.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportOptions.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportOptions.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/GIFExportOptions.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/DiskSpaceMonitor.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DiskSpaceMonitor.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DiskSpaceMonitor.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DiskSpaceMonitor.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DiskSpaceMonitor.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DiskSpaceMonitor.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/DisplayCompositor.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayCompositor.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayCompositor.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayCompositor.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayCompositor.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayCompositor.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/ExportService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ExportService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ExportService.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ExportService.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ExportService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ExportService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/DisplayPickerView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayPickerView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayPickerView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayPickerView.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayPickerView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayPickerView.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/ExportSettingsSheet.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ExportSettingsSheet.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ExportSettingsSheet.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ExportSettingsSheet.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ExportSettingsSheet.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ExportSettingsSheet.swiftdeps"
+  }
+}

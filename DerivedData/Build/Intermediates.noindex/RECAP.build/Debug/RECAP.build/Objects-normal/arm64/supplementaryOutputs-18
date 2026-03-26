@@ -1,0 +1,37 @@
+{
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/ScheduledRecordingService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduledRecordingService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduledRecordingService.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduledRecordingService.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduledRecordingService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduledRecordingService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/ScreenCaptureService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScreenCaptureService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScreenCaptureService.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScreenCaptureService.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScreenCaptureService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScreenCaptureService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/ViewModels/RecordingViewModel.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingViewModel.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingViewModel.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingViewModel.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingViewModel.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingViewModel.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/RecordingsLibraryView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingsLibraryView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingsLibraryView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingsLibraryView.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingsLibraryView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingsLibraryView.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/ScheduleEditorView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduleEditorView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduleEditorView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduleEditorView.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduleEditorView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/DerivedData/Build/Intermediates.noindex/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduleEditorView.swiftdeps"
+  }
+}

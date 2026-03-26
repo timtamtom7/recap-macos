@@ -1,0 +1,44 @@
+{
+  "source" : "\/Users\/mauriello\/Dev\/recap-macos\/Sources\/Intents\/RECAPIntents.swift",
+  "tables" : {
+    "Localizable" : [
+      {
+        "key" : "Export recording ${recordingId} as ${format}"
+      },
+      {
+        "key" : "Get ${count} recent recordings"
+      },
+      {
+        "key" : "Start recording for ${duration} seconds"
+      },
+      {
+        "key" : "Stop recording"
+      }
+    ],
+    "AppShortcuts" : [
+      {
+        "location" : {
+          "startingLine" : 181,
+          "startingColumn" : 0
+        },
+        "key" : "Start screen recording in ${applicationName}",
+        "values" : [
+          "Start screen recording in ${applicationName}",
+          "Record my screen with ${applicationName}"
+        ]
+      },
+      {
+        "location" : {
+          "startingColumn" : 0,
+          "startingLine" : 181
+        },
+        "key" : "Stop recording in ${applicationName}",
+        "values" : [
+          "Stop recording in ${applicationName}",
+          "End screen recording in ${applicationName}"
+        ]
+      }
+    ]
+  },
+  "version" : 1
+}
