@@ -26,8 +26,9 @@ struct ControlBarView: View {
             .menuStyle(.borderlessButton)
             .frame(minWidth: 150)
 
-            Divider()
-                .frame(height: 30)
+            Rectangle()
+                .fill(Color(NSColor.separatorColor))
+                .frame(width: 1, height: 30)
 
             Spacer()
 
@@ -46,7 +47,7 @@ struct ControlBarView: View {
                 ProgressView()
                     .scaleEffect(1.2)
                 Text("Saving...")
-                    .font(.body.weight(.medium))
+                    .font(.body)
                     .foregroundColor(.secondary)
             } else {
                 Button(action: { appState.togglePause() }) {
@@ -80,7 +81,7 @@ struct ControlBarView: View {
         )
         .overlay(
             RoundedRectangle(cornerRadius: 16)
-                .stroke(Color(NSColor.separatorColor), lineWidth: 0.5)
+                .stroke(Color(NSColor.separatorColor), lineWidth: 1)
         )
     }
 }

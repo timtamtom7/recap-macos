@@ -118,7 +118,7 @@ struct RecordingGridItem: View {
 
     var body: some View {
         VStack(spacing: 12) {
-            RoundedRectangle(cornerRadius: 12)
+            RoundedRectangle(cornerRadius: 8)
                 .fill(Color(NSColor.controlBackgroundColor))
                 .frame(height: 120)
                 .overlay {
@@ -127,7 +127,7 @@ struct RecordingGridItem: View {
                         .foregroundColor(.secondary)
                 }
                 .overlay(
-                    RoundedRectangle(cornerRadius: 12)
+                    RoundedRectangle(cornerRadius: 8)
                         .stroke(Color(NSColor.separatorColor), lineWidth: 0.5)
                 )
 
@@ -147,12 +147,12 @@ struct RecordingGridItem: View {
         }
         .padding(16)
         .background(
-            RoundedRectangle(cornerRadius: 16)
+            RoundedRectangle(cornerRadius: 12)
                 .fill(Color(NSColor.controlBackgroundColor))
         )
         .overlay(
-            RoundedRectangle(cornerRadius: 16)
-                .stroke(Color(NSColor.separatorColor), lineWidth: 0.5)
+            RoundedRectangle(cornerRadius: 12)
+                .stroke(Color(NSColor.separatorColor), lineWidth: 1)
         )
     }
 }
@@ -205,7 +205,7 @@ struct RecordingRowView: View {
         )
         .overlay(
             RoundedRectangle(cornerRadius: 12)
-                .stroke(Color(NSColor.separatorColor), lineWidth: 0.5)
+                .stroke(Color(NSColor.separatorColor), lineWidth: 1)
         )
     }
 }

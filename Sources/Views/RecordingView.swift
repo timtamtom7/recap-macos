@@ -51,7 +51,7 @@ struct RecordingView: View {
             } else {
                 VStack(spacing: 16) {
                     Image(systemName: "record.circle")
-                        .font(.system(size: 64))
+                        .font(.system(size: 48))
                         .foregroundColor(.secondary)
 
                     Text("Select a display to record")
@@ -152,7 +152,7 @@ struct RecordingThumbnail: View {
                         .stroke(Color(NSColor.separatorColor), lineWidth: 0.5)
                 )
 
-            VStack(spacing: 2) {
+            VStack(spacing: 4) {
                 Text(recording.title)
                     .font(.caption.weight(.medium))
                     .lineLimit(1)
