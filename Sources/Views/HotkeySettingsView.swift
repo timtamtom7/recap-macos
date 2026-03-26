@@ -35,7 +35,7 @@ struct HotkeySettingsView: View {
                 .padding(.horizontal, 8)
                 .padding(.vertical, 4)
                 .background(Color(NSColor.controlBackgroundColor))
-                .cornerRadius(4)
+                .clipShape(RoundedRectangle(cornerRadius: 4))
                 .onTapGesture {
                     key.wrappedValue = "Press key..."
                 }
