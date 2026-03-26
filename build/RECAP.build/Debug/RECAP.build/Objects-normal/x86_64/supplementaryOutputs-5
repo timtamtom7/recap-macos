@@ -1,0 +1,44 @@
+{
+  "/Users/mauriello/Dev/recap-macos/Sources/Models/GIFExportOptions.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/GIFExportOptions.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/GIFExportOptions.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/GIFExportOptions.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/GIFExportOptions.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/GIFExportOptions.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/ExportService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/ExportService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/ExportService.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/ExportService.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/ExportService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/ExportService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/GIFExportService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/GIFExportService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/GIFExportService.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/GIFExportService.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/GIFExportService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/GIFExportService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/GlobalHotkeyService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/GlobalHotkeyService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/GlobalHotkeyService.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/GlobalHotkeyService.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/GlobalHotkeyService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/GlobalHotkeyService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/ExportSettingsSheet.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/ExportSettingsSheet.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/ExportSettingsSheet.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/ExportSettingsSheet.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/ExportSettingsSheet.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/ExportSettingsSheet.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/GIFExportSheet.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/GIFExportSheet.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/GIFExportSheet.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/GIFExportSheet.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/GIFExportSheet.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/GIFExportSheet.swiftdeps"
+  }
+}

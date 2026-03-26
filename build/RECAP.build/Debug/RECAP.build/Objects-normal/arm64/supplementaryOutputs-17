@@ -1,0 +1,44 @@
+{
+  "/Users/mauriello/Dev/recap-macos/Sources/App/RECAPApp.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAPApp.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAPApp.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAPApp.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAPApp.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAPApp.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Intents/RECAPIntents.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAPIntents.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAPIntents.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAPIntents.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAPIntents.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RECAPIntents.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Models/Recording.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/Recording.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/Recording.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/Recording.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/Recording.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/Recording.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/RecordingIntelligence.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingIntelligence.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingIntelligence.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingIntelligence.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingIntelligence.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingIntelligence.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/MultiDisplayCaptureService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MultiDisplayCaptureService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MultiDisplayCaptureService.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MultiDisplayCaptureService.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MultiDisplayCaptureService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MultiDisplayCaptureService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/MultiDisplaySelectorView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MultiDisplaySelectorView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MultiDisplaySelectorView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MultiDisplaySelectorView.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MultiDisplaySelectorView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/MultiDisplaySelectorView.swiftdeps"
+  }
+}

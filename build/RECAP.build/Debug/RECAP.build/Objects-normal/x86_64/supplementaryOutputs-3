@@ -1,0 +1,44 @@
+{
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/CloudSyncService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/CloudSyncService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/CloudSyncService.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/CloudSyncService.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/CloudSyncService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/CloudSyncService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/CloudUploadService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/CloudUploadService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/CloudUploadService.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/CloudUploadService.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/CloudUploadService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/CloudUploadService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/CollaborationService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/CollaborationService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/CollaborationService.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/CollaborationService.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/CollaborationService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/CollaborationService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/ContentView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/ContentView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/ContentView.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/ContentView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/ContentView.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/ControlBarView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/ControlBarView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/ControlBarView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/ControlBarView.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/ControlBarView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/ControlBarView.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/CountdownOverlayView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/CountdownOverlayView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/CountdownOverlayView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/CountdownOverlayView.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/CountdownOverlayView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/x86_64/CountdownOverlayView.swiftdeps"
+  }
+}

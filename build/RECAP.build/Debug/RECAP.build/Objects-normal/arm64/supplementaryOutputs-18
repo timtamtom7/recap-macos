@@ -1,0 +1,44 @@
+{
+  "/Users/mauriello/Dev/recap-macos/Sources/Models/RecordingState.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingState.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingState.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingState.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingState.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingState.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/RecordingStore.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingStore.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingStore.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingStore.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingStore.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingStore.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/ViewModels/RecordingViewModel.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingViewModel.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingViewModel.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingViewModel.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingViewModel.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingViewModel.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/RecordingView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingView.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingView.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/RecordingsLibraryView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingsLibraryView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingsLibraryView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingsLibraryView.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingsLibraryView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/RecordingsLibraryView.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/ScheduleEditorView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduleEditorView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduleEditorView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduleEditorView.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduleEditorView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/ScheduleEditorView.swiftdeps"
+  }
+}

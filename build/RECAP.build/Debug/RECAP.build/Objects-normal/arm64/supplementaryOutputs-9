@@ -1,0 +1,44 @@
+{
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/CropService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CropService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CropService.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CropService.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CropService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CropService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/DiskSpaceMonitor.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DiskSpaceMonitor.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DiskSpaceMonitor.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DiskSpaceMonitor.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DiskSpaceMonitor.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DiskSpaceMonitor.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/DisplayCompositor.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayCompositor.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayCompositor.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayCompositor.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayCompositor.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayCompositor.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Services/EnterpriseService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/EnterpriseService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/EnterpriseService.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/EnterpriseService.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/EnterpriseService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/EnterpriseService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/CropOverlayView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CropOverlayView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CropOverlayView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CropOverlayView.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CropOverlayView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/CropOverlayView.swiftdeps"
+  },
+  "/Users/mauriello/Dev/recap-macos/Sources/Views/DisplayPickerView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayPickerView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayPickerView.d",
+    "diagnostics" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayPickerView.dia",
+    "object" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayPickerView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/recap-macos/build/RECAP.build/Debug/RECAP.build/Objects-normal/arm64/DisplayPickerView.swiftdeps"
+  }
+}

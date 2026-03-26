@@ -43,6 +43,7 @@ final class ClickDetector {
         self.onClickHandler = onClick
 
         let eventMask: CGEventMask = (1 << CGEventType.leftMouseDown.rawValue) | (1 << CGEventType.rightMouseDown.rawValue)
+        let detectorPtr = Unmanaged.passUnretained(self).toOpaque()
 
         eventTap = CGEvent.tapCreate(
             tap: .cgSessionEventTap,
@@ -50,9 +51,16 @@ final class ClickDetector {
             options: .defaultTap,
             eventsOfInterest: eventMask,
             callback: { (proxy, type, event, userInfo) -> Unmanaged<CGEvent>? in
+                guard let userInfo = userInfo else { return Unmanaged.passRetained(event) }
+                let detector = Unmanaged<ClickDetector>.fromOpaque(userInfo).takeUnretainedValue()
+                let isRightClick = type == .rightMouseDown
+                let location = event.location
+                DispatchQueue.main.async {
+                    detector.onClickHandler?(location, isRightClick)
+                }
                 return Unmanaged.passRetained(event)
             },
-            userInfo: nil
+            userInfo: detectorPtr
         )
 
         guard let tap = eventTap else { return }

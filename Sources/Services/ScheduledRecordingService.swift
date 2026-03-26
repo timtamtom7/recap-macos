@@ -38,10 +38,13 @@ struct ScheduledRecording: Identifiable, Codable {
         }
 
         private func nextCustomWeekdayFn(_ weekdays: [Int], after: Date) -> Date? {
-            guard let foundWeekday = weekdays.sorted().first(where: { $0 > Calendar.current.component(.weekday, from: after) }) else {
-                return nil
+            let sortedWeekdays = weekdays.sorted()
+            let currentWeekday = Calendar.current.component(.weekday, from: after)
+            if let foundWeekday = sortedWeekdays.first(where: { $0 > currentWeekday }) {
+                return nextWeekdayFn(foundWeekday, after: after)
             }
-            return nextWeekdayFn(foundWeekday, after: after)
+            // Wrap to first weekday in the next week
+            return nextWeekdayFn(sortedWeekdays.first!, after: after)
         }
     }
 

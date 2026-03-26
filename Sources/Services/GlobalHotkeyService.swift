@@ -34,6 +34,7 @@ final class GlobalHotkeyService: ObservableObject {
         guard eventTap == nil else { return }
 
         let eventMask: CGEventMask = (1 << CGEventType.keyDown.rawValue)
+        let servicePtr = Unmanaged.passUnretained(self).toOpaque()
 
         eventTap = CGEvent.tapCreate(
             tap: .cgSessionEventTap,
@@ -41,9 +42,26 @@ final class GlobalHotkeyService: ObservableObject {
             options: .defaultTap,
             eventsOfInterest: eventMask,
             callback: { (proxy, type, event, userInfo) -> Unmanaged<CGEvent>? in
-                return Unmanaged.passRetained(event)
+                guard let userInfo = userInfo else { return Unmanaged.passRetained(event) }
+                let service = Unmanaged<GlobalHotkeyService>.fromOpaque(userInfo).takeUnretainedValue()
+                let cgEvent = event
+                let keyCode = UInt16(cgEvent.getIntegerValueField(.keyboardEventKeycode))
+                let flags = cgEvent.flags
+                let modMask: UInt32 = (
+                    ((flags.contains(.maskCommand)) ? GlobalHotkeyService.MOD_CMD : 0) |
+                    ((flags.contains(.maskShift)) ? GlobalHotkeyService.MOD_SHIFT : 0) |
+                    ((flags.contains(.maskControl)) ? GlobalHotkeyService.MOD_CONTROL : 0) |
+                    ((flags.contains(.maskAlternate)) ? GlobalHotkeyService.MOD_OPTION : 0)
+                )
+                for hotkey in service.hotkeys {
+                    if hotkey.keyCode == keyCode && hotkey.modifiers == modMask {
+                        DispatchQueue.main.async { hotkey.action() }
+                        return nil
+                    }
+                }
+                return Unmanaged.passRetained(cgEvent)
             },
-            userInfo: nil
+            userInfo: servicePtr
         )
 
         guard let tap = eventTap else { return }

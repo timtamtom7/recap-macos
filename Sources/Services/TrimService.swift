@@ -24,8 +24,8 @@ final class TrimService {
             progress(Double(exportSession.progress))
         }
 
+        defer { progressTimer.invalidate() }
         await exportSession.export()
-        progressTimer.invalidate()
 
         switch exportSession.status {
         case .completed:

@@ -51,13 +51,9 @@ final class GIFExportService {
         }
 
         var frameIndex = 0
-        let lock = NSLock()
 
         await withCheckedContinuation { continuation in
             generator.generateCGImagesAsynchronously(forTimes: times) { requestedTime, cgImage, actualTime, result, error in
-                lock.lock()
-                defer { lock.unlock() }
-
                 if let cgImage = cgImage {
                     let frameProperties: [String: Any] = [
                         kCGImagePropertyGIFDictionary as String: [

@@ -23,8 +23,8 @@ class ExportService {
             progressHandler?(Double(exportSession.progress))
         }
 
+        defer { progressTimer.invalidate() }
         await exportSession.export()
-        progressTimer.invalidate()
 
         if let error = exportSession.error {
             throw error
