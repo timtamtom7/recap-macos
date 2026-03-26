@@ -75,7 +75,3 @@ final class AutomationService: ObservableObject {
         }
     }
 }
-
-extension Notification.Name {
-    static let systemDidWake = Notification.Name("systemDidWake")
-}

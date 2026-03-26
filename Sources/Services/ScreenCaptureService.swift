@@ -2,6 +2,7 @@ import Foundation
 import AVFoundation
 import CoreMedia
 import AppKit
+import os.log
 
 class ScreenCaptureService: NSObject {
     private var captureInput: AVCaptureScreenInput?
@@ -27,7 +28,7 @@ class ScreenCaptureService: NSObject {
         self.session = session
 
         guard let input = AVCaptureScreenInput(displayID: display.id) else {
-            print("Failed to create screen input")
+            Log.capture.error("Failed to create screen input")
             return
         }
 
@@ -49,10 +50,14 @@ class ScreenCaptureService: NSObject {
             throw CaptureError.inputNotConfigured
         }
 
-        let writer = try AVAssetWriter(url: session!.outputURL, fileType: .mov)
+        guard let session = session else {
+            throw CaptureError.sessionNotConfigured
+        }
+
+        let writer = try AVAssetWriter(url: session.outputURL, fileType: .mov)
 
         let videoSettings: [String: Any] = [
-            AVVideoCodecKey: session!.codec.avCodec,
+            AVVideoCodecKey: session.codec.avCodec,
             AVVideoWidthKey: Int(display.resolution.width),
             AVVideoHeightKey: Int(display.resolution.height)
         ]
@@ -66,7 +71,7 @@ class ScreenCaptureService: NSObject {
         }
         self.videoWriterInput = videoInput
 
-        if session?.includesAudio == true {
+        if session.includesAudio == true {
             let audioSettings: [String: Any] = [
                 AVFormatIDKey: kAudioFormatLinearPCM,
                 AVSampleRateKey: 44100,
@@ -150,6 +155,7 @@ extension ScreenCaptureService: AVCaptureVideoDataOutputSampleBufferDelegate {
 
 enum CaptureError: Error {
     case inputNotConfigured
+    case sessionNotConfigured
     case writerNotReady
     case encodingFailed
 }

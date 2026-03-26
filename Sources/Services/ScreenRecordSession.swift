@@ -14,7 +14,7 @@ class ScreenRecordSession {
     private let captureService: ScreenCaptureService
     private var startTime: CMTime?
 
-    init(display: DisplayInfo, includesAudio: Bool = true, codec: Codec = .prores422, frameRate: Int = 30) {
+    init(display: DisplayInfo, includesAudio: Bool = true, codec: Codec = .prores422, frameRate: Int = Configuration.defaultFrameRate) {
         self.id = UUID()
         self.display = display
         self.includesAudio = includesAudio
@@ -27,11 +27,7 @@ class ScreenRecordSession {
         let timestamp = formatter.string(from: Date())
         let filename = "Recording-\(timestamp)"
 
-        let moviesDir = FileManager.default.urls(for: .moviesDirectory, in: .userDomainMask).first!
-        let recapDir = moviesDir.appendingPathComponent("RECAP", isDirectory: true)
-        try? FileManager.default.createDirectory(at: recapDir, withIntermediateDirectories: true)
-
-        self.outputURL = recapDir.appendingPathComponent("\(filename).mov")
+        self.outputURL = Configuration.recordingsDirectory.appendingPathComponent("\(filename).mov")
 
         self.captureService = ScreenCaptureService(display: display)
         self.captureService.setupSession(self)

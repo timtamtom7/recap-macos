@@ -1,4 +1,5 @@
 import Foundation
+import os.log
 
 final class DiskSpaceMonitor: ObservableObject {
     static let shared = DiskSpaceMonitor()
@@ -7,8 +8,8 @@ final class DiskSpaceMonitor: ObservableObject {
     @Published var isLowSpace = false
     @Published var criticalSpace = false
     
-    private let warningThreshold: Int64 = 5 * 1024 * 1024 * 1024 // 5GB
-    private let criticalThreshold: Int64 = 1 * 1024 * 1024 * 1024 // 1GB
+    private let warningThreshold: Int64 = Configuration.warningFreeSpaceBytes
+    private let criticalThreshold: Int64 = Configuration.minimumFreeSpaceBytes
     private var timer: Timer?
     
     private init() {
@@ -33,12 +34,12 @@ final class DiskSpaceMonitor: ObservableObject {
                 criticalSpace = capacity < criticalThreshold
             }
         } catch {
-            print("Error checking disk space: \(error)")
+            Log.general.error("Error checking disk space: \(error.localizedDescription)")
         }
     }
     
     private func startMonitoring() {
-        timer = Timer.scheduledTimer(withTimeInterval: 60, repeats: true) { [weak self] _ in
+        timer = Timer.scheduledTimer(withTimeInterval: Configuration.diskSpaceCheckInterval, repeats: true) { [weak self] _ in
             self?.checkDiskSpace()
         }
     }
@@ -72,8 +73,4 @@ final class RecordingAutoStopManager {
         // Post notification to stop recording
         NotificationCenter.default.post(name: .stopRecordingDueToDiskSpace, object: nil)
     }
-}
-
-extension Notification.Name {
-    static let stopRecordingDueToDiskSpace = Notification.Name("RECAPStopRecordingDueToDiskSpace")
 }

@@ -54,7 +54,7 @@ struct MultiDisplaySelectorView: View {
         .frame(width: 500, height: 450)
     }
 
-    private func toggleDisplay(_ display: MultiDisplayCaptureService.DisplayInfo) {
+    private func toggleDisplay(_ display: DisplayInfo) {
         if displayService.selectedDisplays.contains(display.id) {
             displayService.deselectDisplay(display)
         } else {
@@ -64,7 +64,7 @@ struct MultiDisplaySelectorView: View {
 }
 
 struct DisplaySelectorCard: View {
-    let display: MultiDisplayCaptureService.DisplayInfo
+    let display: DisplayInfo
     let isSelected: Bool
     let onTap: () -> Void
 
@@ -75,7 +75,7 @@ struct DisplaySelectorCard: View {
                 .frame(height: 80)
                 .overlay(
                     VStack {
-                        if display.isMain {
+                        if display.id == CGMainDisplayID() {
                             Image(systemName: "desktopcomputer")
                                 .font(.title)
                                 .foregroundColor(.secondary)

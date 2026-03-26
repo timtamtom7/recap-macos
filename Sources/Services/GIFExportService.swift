@@ -8,6 +8,8 @@ final class GIFExportService {
     private var assetWriter: AVAssetWriter?
     private var assetReader: AVAssetReader?
 
+    private let batchSize = 30
+
     func exportGIF(from recording: Recording, options: GIFExportOptions, progress: @escaping (Double) -> Void) async throws -> URL {
         let asset = AVAsset(url: recording.filePath)
         let duration = try await asset.load(.duration).seconds
@@ -16,7 +18,9 @@ final class GIFExportService {
             .appendingPathComponent(UUID().uuidString)
             .appendingPathExtension("gif")
 
-        let track = try await asset.loadTracks(withMediaType: .video).first!
+        guard let track = try await asset.loadTracks(withMediaType: .video).first else {
+            throw GIFExportError.noVideoTrack
+        }
         let naturalSize = try await track.load(.naturalSize)
 
         let outputSize: CGSize
@@ -45,33 +49,45 @@ final class GIFExportService {
         generator.appliesPreferredTrackTransform = true
         generator.maximumSize = outputSize
 
-        let times = (0..<frameCount).map { i -> NSValue in
-            let time = CMTime(seconds: Double(i) * frameDuration, preferredTimescale: 600)
-            return NSValue(time: time)
-        }
+        var processedFrames = 0
 
-        var frameIndex = 0
+        for batchStart in stride(from: 0, to: frameCount, by: batchSize) {
+            let batchEnd = min(batchStart + batchSize, frameCount)
+            let batchFrameCount = batchEnd - batchStart
 
-        await withCheckedContinuation { continuation in
-            generator.generateCGImagesAsynchronously(forTimes: times) { requestedTime, cgImage, actualTime, result, error in
-                if let cgImage = cgImage {
-                    let frameProperties: [String: Any] = [
-                        kCGImagePropertyGIFDictionary as String: [
-                            kCGImagePropertyGIFDelayTime as String: frameDuration
+            let batchTimes = (batchStart..<batchEnd).map { i -> NSValue in
+                let time = CMTime(seconds: Double(i) * frameDuration, preferredTimescale: 600)
+                return NSValue(time: time)
+            }
+
+            await withCheckedContinuation { (continuation: CheckedContinuation<Void, Never>) in
+                var batchProcessed = 0
+                var hasResumed = false
+                generator.generateCGImagesAsynchronously(forTimes: batchTimes) { requestedTime, cgImage, actualTime, result, error in
+                    defer {
+                        batchProcessed += 1
+                    }
+
+                    if !hasResumed && batchProcessed >= batchFrameCount {
+                        hasResumed = true
+                        continuation.resume()
+                    }
+
+                    if let cgImage = cgImage {
+                        let frameProperties: [String: Any] = [
+                            kCGImagePropertyGIFDictionary as String: [
+                                kCGImagePropertyGIFDelayTime as String: frameDuration
+                            ]
                         ]
-                    ]
-                    CGImageDestinationAddImage(destination, cgImage, frameProperties as CFDictionary)
+                        CGImageDestinationAddImage(destination, cgImage, frameProperties as CFDictionary)
+                    }
                 }
+            }
 
-                frameIndex += 1
-                let currentProgress = Double(frameIndex) / Double(frameCount)
-                DispatchQueue.main.async {
-                    progress(currentProgress)
-                }
-
-                if frameIndex >= frameCount {
-                    continuation.resume()
-                }
+            processedFrames += batchFrameCount
+            let currentProgress = Double(processedFrames) / Double(frameCount)
+            await MainActor.run {
+                progress(currentProgress)
             }
         }
 
@@ -109,11 +125,13 @@ final class GIFExportService {
     enum GIFExportError: LocalizedError {
         case cannotCreateDestination
         case finalizationFailed
+        case noVideoTrack
 
         var errorDescription: String? {
             switch self {
             case .cannotCreateDestination: return "Could not create GIF destination"
             case .finalizationFailed: return "Failed to finalize GIF export"
+            case .noVideoTrack: return "No video track found"
             }
         }
     }

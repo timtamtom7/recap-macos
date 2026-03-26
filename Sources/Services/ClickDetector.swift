@@ -3,6 +3,7 @@ import AppKit
 import CoreGraphics
 
 final class ClickDetector {
+    static let shared = ClickDetector()
     private var eventTap: CFMachPort?
     private var runLoopSource: CFRunLoopSource?
     private var onClickHandler: ((CGPoint, Bool) -> Void)?
@@ -55,7 +56,7 @@ final class ClickDetector {
                 let detector = Unmanaged<ClickDetector>.fromOpaque(userInfo).takeUnretainedValue()
                 let isRightClick = type == .rightMouseDown
                 let location = event.location
-                DispatchQueue.main.async {
+                DispatchQueue.main.async { @MainActor in
                     detector.onClickHandler?(location, isRightClick)
                 }
                 return Unmanaged.passRetained(event)

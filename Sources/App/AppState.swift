@@ -19,6 +19,7 @@ class AppState: ObservableObject {
     var captureService: ScreenCaptureService?
     private var session: ScreenRecordSession?
     private var timer: Timer?
+    private var timerCancellable: AnyCancellable?
     private var cancellables = Set<AnyCancellable>()
 
     private let recordingStore = RecordingStore.shared
@@ -127,7 +128,7 @@ class AppState: ObservableObject {
 
         recordingStore.saveRecording(recording)
         recentRecordings.insert(recording, at: 0)
-        if recentRecordings.count > 10 {
+        if recentRecordings.count > Configuration.maxRecentRecordings {
             recentRecordings.removeLast()
         }
 
@@ -147,11 +148,11 @@ class AppState: ObservableObject {
     }
 
     func loadRecentRecordings() {
-        recentRecordings = recordingStore.getRecentRecordings(limit: 10)
+        recentRecordings = recordingStore.getRecentRecordings(limit: Configuration.maxRecentRecordings)
     }
 
     private func startTimer() {
-        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
+        timer = Timer.scheduledTimer(withTimeInterval: Configuration.timerInterval, repeats: true) { [weak self] _ in
             Task { @MainActor in
                 self?.elapsedTime += 1
             }
