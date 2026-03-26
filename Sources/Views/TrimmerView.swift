@@ -20,7 +20,7 @@ struct TrimmerView: View {
             if let player = videoPlayer {
                 VideoPlayer(player: player)
                     .frame(height: 280)
-                    .cornerRadius(8)
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
             }
 
             // Timeline

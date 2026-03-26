@@ -10,7 +10,7 @@ struct ExportSettingsSheet: View {
     @State private var errorMessage: String?
 
     var body: some View {
-        VStack(spacing: 20) {
+        VStack(spacing: 16) {
             Text("Export Recording")
                 .font(.headline)
 

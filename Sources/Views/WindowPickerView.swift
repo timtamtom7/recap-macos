@@ -8,7 +8,7 @@ struct WindowPickerView: View {
     private let exportService = ExportService.shared
 
     var body: some View {
-        VStack(spacing: 20) {
+        VStack(spacing: 16) {
             Text("Select Window to Record")
                 .font(.headline)
 
@@ -57,7 +57,7 @@ struct WindowRow: View {
     var body: some View {
         HStack(spacing: 12) {
             RoundedRectangle(cornerRadius: 6)
-                .fill(Color.gray.opacity(0.2))
+                .fill(Color(NSColor.controlBackgroundColor))
                 .frame(width: 80, height: 50)
                 .overlay {
                     Image(systemName: "macwindow")

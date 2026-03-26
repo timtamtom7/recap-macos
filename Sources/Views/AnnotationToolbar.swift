@@ -89,7 +89,7 @@ struct AnnotationToolbar: View {
         }
         .frame(width: isCollapsed ? 40 : 220)
         .background(Color(NSColor.windowBackgroundColor))
-        .cornerRadius(8)
+        .clipShape(RoundedRectangle(cornerRadius: 8))
         .shadow(radius: 4)
     }
 
@@ -100,7 +100,7 @@ struct AnnotationToolbar: View {
                 .font(.system(size: 14))
                 .frame(width: 32, height: 32)
                 .background(engine.currentTool == tool ? Color.accentColor.opacity(0.2) : Color.clear)
-                .cornerRadius(6)
+                .clipShape(RoundedRectangle(cornerRadius: 6))
         }
         .buttonStyle(.plain)
         .help(tool.rawValue)
