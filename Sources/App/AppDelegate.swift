@@ -11,6 +11,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         RecordingStore.shared.setup()
         mainWindowController = MainWindowController()
         mainWindowController?.showWindow(nil)
+        RecapAPIService.shared.start()
 
         NSApp.setActivationPolicy(.accessory)
         NSApp.activate(ignoringOtherApps: true)
@@ -27,6 +28,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationWillTerminate(_ notification: Notification) {
+        RecapAPIService.shared.stop()
         if AppState.shared.recordingState == .recording {
             AppState.shared.stopRecording()
         }
