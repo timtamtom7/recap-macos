@@ -40,7 +40,9 @@ final class CropService {
 
     func crop(recording: Recording, region: CropRegion, progress: @escaping (Double) -> Void) async throws -> Recording {
         let asset = AVAsset(url: recording.filePath)
-        let videoTrack = try await asset.loadTracks(withMediaType: .video).first!
+        guard let videoTrack = try await asset.loadTracks(withMediaType: .video).first else {
+            throw CropError.noVideoTrack
+        }
         let naturalSize = try await videoTrack.load(.naturalSize)
 
         let videoComposition = AVMutableVideoComposition(propertiesOf: asset)
@@ -101,11 +103,13 @@ final class CropService {
     enum CropError: LocalizedError {
         case cannotCreateExportSession
         case exportFailed
+        case noVideoTrack
 
         var errorDescription: String? {
             switch self {
             case .cannotCreateExportSession: return "Could not create crop export session"
             case .exportFailed: return "Crop export failed"
+            case .noVideoTrack: return "No video track found"
             }
         }
     }

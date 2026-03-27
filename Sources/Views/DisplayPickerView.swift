@@ -64,7 +64,7 @@ struct DisplayCard: View {
     var body: some View {
         VStack(spacing: 8) {
             RoundedRectangle(cornerRadius: 8)
-                .fill(Color.gray.opacity(0.2))
+                .fill(Color(NSColor.controlBackgroundColor))
                 .frame(height: 120)
                 .overlay {
                     Image(systemName: "rectangle.on.rectangle")

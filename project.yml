@@ -2,7 +2,7 @@ name: RECAP
 options:
   bundleIdPrefix: com.recap
   deploymentTarget:
-    macOS: "13.0"
+    macOS: "14.0"
   xcodeVersion: "15.0"
   generateEmptyDirectories: true
 
@@ -30,12 +30,11 @@ targets:
         DEVELOPMENT_TEAM: ""
         ENABLE_HARDENED_RUNTIME: YES
         SWIFT_VERSION: "5.9"
-        MACOSX_DEPLOYMENT_TARGET: "13.0"
+        MACOSX_DEPLOYMENT_TARGET: "14.0"
         LD_RUNPATH_SEARCH_PATHS: "@executable_path/../Frameworks"
         COMBINE_HIDPI_IMAGES: YES
         SCREEN_CAPTURE_USAGE_DESCRIPTION: "RECAP needs screen recording access to capture your screen."
         MICROPHONE_USAGE_DESCRIPTION: "RECAP needs microphone access to record audio with your screen recording."
-        COMBINE_HIDPI_IMAGES: YES
     dependencies:
       - package: SQLite
 
@@ -43,3 +42,23 @@ targets:
       path: Sources/Resources/RECAP.entitlements
       properties:
         com.apple.security.app-sandbox: false
+
+  RECAPTests:
+    type: bundle
+    platform: macOS
+    sources:
+      - Tests
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.recap.app.tests
+        PRODUCT_NAME: RECAPTests
+        SWIFT_VERSION: "5.9"
+        MACOSX_DEPLOYMENT_TARGET: "14.0"
+        BUNDLE_LOADABLE: YES
+        WRAPPER_EXTENSION: xctest
+        GENERATE_INFOPLIST_FILE: YES
+        GENERATE_INFOPLIST_FILE_FOR_TESTING: YES
+        LD_RUNPATH_SEARCH_PATHS: "@test_runner_path/../Frameworks"
+    dependencies:
+      - target: RECAP
+      - sdk: XCTest.framework

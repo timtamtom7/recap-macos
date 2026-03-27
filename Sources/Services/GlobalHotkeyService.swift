@@ -55,7 +55,7 @@ final class GlobalHotkeyService: ObservableObject {
                 )
                 for hotkey in service.hotkeys {
                     if hotkey.keyCode == keyCode && hotkey.modifiers == modMask {
-                        DispatchQueue.main.async { hotkey.action() }
+                        DispatchQueue.main.async { @MainActor in hotkey.action() }
                         return nil
                     }
                 }

@@ -1,5 +1,6 @@
 import Foundation
 import CloudKit
+import os.log
 
 final class CloudSyncService: ObservableObject {
     static let shared = CloudSyncService()
@@ -47,7 +48,7 @@ final class CloudSyncService: ObservableObject {
         do {
             try await syncRecordingMetadata()
         } catch {
-            print("Cloud sync error: \(error)")
+            Log.cloud.error("Cloud sync error: \(error.localizedDescription)")
         }
     }
     

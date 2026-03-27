@@ -7,7 +7,6 @@ struct ControlBarView: View {
 
     var body: some View {
         HStack(spacing: 24) {
-            // Display selector
             Menu {
                 if let display = appState.selectedDisplay {
                     Button("Display: \(display.name)") {}
@@ -22,22 +21,24 @@ struct ControlBarView: View {
                     Text(appState.selectedDisplay?.name ?? "Select Display")
                         .lineLimit(1)
                 }
+                .font(.body.weight(.medium))
             }
             .menuStyle(.borderlessButton)
             .frame(minWidth: 150)
 
-            Divider()
-                .frame(height: 30)
+            Rectangle()
+                .fill(Color(NSColor.separatorColor))
+                .frame(width: 1, height: 30)
 
             Spacer()
 
-            // Main controls
             if appState.recordingState == .idle {
                 Button(action: { appState.toggleRecording() }) {
-                    Label("Record", systemImage: "record.circle")
+                    Label("Record", systemImage: "record.circle.fill")
+                        .font(.body.weight(.semibold))
                         .foregroundColor(.white)
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 10)
+                        .padding(.horizontal, 24)
+                        .padding(.vertical, 12)
                         .background(Color.red)
                         .clipShape(Capsule())
                 }
@@ -46,9 +47,9 @@ struct ControlBarView: View {
                 ProgressView()
                     .scaleEffect(1.2)
                 Text("Saving...")
+                    .font(.body)
                     .foregroundColor(.secondary)
             } else {
-                // Recording controls
                 Button(action: { appState.togglePause() }) {
                     Image(systemName: appState.recordingState == .paused ? "play.circle.fill" : "pause.circle.fill")
                         .font(.system(size: 44))
@@ -66,16 +67,21 @@ struct ControlBarView: View {
 
             Spacer()
 
-            // Settings
             Button(action: { appState.showSettings = true }) {
-                Image(systemName: "gear")
-                    .font(.title3)
+                Image(systemName: "gearshape.fill")
+                    .font(.title3.weight(.medium))
             }
             .buttonStyle(.plain)
         }
-        .padding()
-        .background(Color(NSColor.controlBackgroundColor))
-        .clipShape(RoundedRectangle(cornerRadius: 12))
-        .shadow(color: .black.opacity(0.1), radius: 4, y: 2)
+        .padding(.horizontal, 24)
+        .padding(.vertical, 16)
+        .background(
+            RoundedRectangle(cornerRadius: 12)
+                .fill(Color(NSColor.controlBackgroundColor))
+        )
+        .overlay(
+            RoundedRectangle(cornerRadius: 12)
+                .stroke(Color(NSColor.separatorColor), lineWidth: 1)
+        )
     }
 }
