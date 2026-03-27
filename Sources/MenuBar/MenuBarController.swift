@@ -181,7 +181,7 @@ struct EnhancedMenuBarPopoverView: View {
         }
         .padding()
         .background(Color(NSColor.controlBackgroundColor))
-        .cornerRadius(8)
+        .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 
     private var scheduledRecordingsCard: some View {
@@ -209,7 +209,7 @@ struct EnhancedMenuBarPopoverView: View {
         }
         .padding()
         .background(Color(NSColor.controlBackgroundColor))
-        .cornerRadius(8)
+        .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 
     private var recentRecordingsCard: some View {
@@ -242,7 +242,7 @@ struct EnhancedMenuBarPopoverView: View {
         }
         .padding()
         .background(Color(NSColor.controlBackgroundColor))
-        .cornerRadius(8)
+        .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 
     private var footer: some View {
