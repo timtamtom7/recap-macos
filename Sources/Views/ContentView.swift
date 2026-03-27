@@ -120,39 +120,85 @@ struct SidebarView: View {
 
 struct SettingsView: View {
     @EnvironmentObject var appState: AppState
-    @State private var selectedCodec: Codec = .prores422
-    @State private var includeAudio = true
-    @State private var frameRate = 30
-    @State private var exportPreset: ExportPreset = .standard
+    @AppStorage("includeAudio") private var includeAudio = true
+    @AppStorage("frameRate") private var frameRate = 30
+    @AppStorage("selectedCodec") private var selectedCodec = Codec.prores422.rawValue
+    @AppStorage("exportPreset") private var exportPreset = ExportPreset.standard.rawValue
+    @AppStorage("countdownSeconds") private var countdownSeconds = 3
+    @AppStorage("autoStopRecording") private var autoStopRecording = false
+    @AppStorage("maxRecordingDuration") private var maxRecordingDuration = 3600
 
     var body: some View {
-        Form {
-            Section("Recording") {
-                Toggle("Include Audio", isOn: $includeAudio)
+        ScrollView {
+            VStack(spacing: 24) {
+                Text("Settings")
+                    .font(.largeTitle.weight(.bold))
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.bottom, 8)
 
-                Picker("Frame Rate", selection: $frameRate) {
-                    Text("24 fps").tag(24)
-                    Text("30 fps").tag(30)
-                    Text("60 fps").tag(60)
+                settingsSection(title: "Recording", icon: "record.circle") {
+                    Toggle("Include Microphone Audio", isOn: $includeAudio)
+
+                    Picker("Frame Rate", selection: $frameRate) {
+                        Text("24 fps").tag(24)
+                        Text("30 fps").tag(30)
+                        Text("60 fps").tag(60)
+                    }
+
+                    Picker("Video Codec", selection: $selectedCodec) {
+                        Text("ProRes 422 (Best Quality)").tag(Codec.prores422.rawValue)
+                        Text("H.264 (Smaller File)").tag(Codec.h264.rawValue)
+                    }
                 }
 
-                Picker("Codec", selection: $selectedCodec) {
-                    Text("ProRes 422 (High Quality)").tag(Codec.prores422)
-                    Text("H.264 (Standard)").tag(Codec.h264)
-                }
-            }
+                settingsSection(title: "Timer", icon: "timer") {
+                    Stepper("Countdown: \(countdownSeconds)s", value: $countdownSeconds, in: 0...10)
 
-            Section("Export Default") {
-                Picker("Export Preset", selection: $exportPreset) {
-                    ForEach(ExportPreset.allCases) { preset in
-                        Text(preset.rawValue).tag(preset)
+                    Toggle("Auto-stop Recording", isOn: $autoStopRecording)
+
+                    if autoStopRecording {
+                        Stepper("Max Duration: \(maxRecordingDuration / 60) min", value: $maxRecordingDuration, in: 60...14400, step: 60)
+                    }
+                }
+
+                settingsSection(title: "Export", icon: "square.and.arrow.up") {
+                    Picker("Default Preset", selection: $exportPreset) {
+                        ForEach(ExportPreset.allCases, id: \.rawValue) { preset in
+                            Text(preset.rawValue).tag(preset.rawValue)
+                        }
+                    }
+                }
+
+                settingsSection(title: "About", icon: "info.circle") {
+                    HStack {
+                        Text("Version")
+                        Spacer()
+                        Text("1.0.0")
+                            .foregroundColor(.secondary)
                     }
                 }
             }
+            .padding(24)
+            .frame(maxWidth: 700)
         }
-        .formStyle(.grouped)
-        .scrollContentBackground(.hidden)
         .background(Color(NSColor.windowBackgroundColor))
-        .frame(width: 400, height: 350)
+    }
+
+    @ViewBuilder
+    private func settingsSection<Content: View>(title: String, icon: String, @ViewBuilder content: () -> Content) -> some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Label(title, systemImage: icon)
+                .font(.headline)
+                .foregroundColor(.primary)
+
+            VStack(spacing: 0) {
+                content()
+            }
+            .padding()
+            .background(
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(Color(NSColor.controlBackgroundColor))
+            )
+        }
     }
 }
