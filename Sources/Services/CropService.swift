@@ -72,12 +72,15 @@ final class CropService {
         exportSession.outputFileType = .mp4
         exportSession.videoComposition = videoComposition
 
-        let progressTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
+        var progressTimer: Timer?
+        progressTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { [weak self] _ in
+            guard self != nil else { return }
             progress(Double(exportSession.progress))
         }
 
         await exportSession.export()
-        progressTimer.invalidate()
+        progressTimer?.invalidate()
+        progressTimer = nil
 
         guard exportSession.status == .completed else {
             throw exportSession.error ?? CropError.exportFailed

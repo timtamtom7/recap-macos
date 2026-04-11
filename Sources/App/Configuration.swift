@@ -6,17 +6,28 @@ enum Configuration {
 
     // Paths
     static var recordingsDirectory: URL {
-        let url = FileManager.default.urls(for: .moviesDirectory, in: .userDomainMask)
-            .first!.appendingPathComponent("RECAP", isDirectory: true)
-        try? FileManager.default.createDirectory(at: url, withIntermediateDirectories: true)
-        return url
+        guard let url = FileManager.default.urls(for: .moviesDirectory, in: .userDomainMask).first else {
+            // Fallback to temporary directory if Movies directory is unavailable
+            let fallback = FileManager.default.temporaryDirectory.appendingPathComponent("RECAP", isDirectory: true)
+            try? FileManager.default.createDirectory(at: fallback, withIntermediateDirectories: true)
+            return fallback
+        }
+        let recURL = url.appendingPathComponent("RECAP", isDirectory: true)
+        try? FileManager.default.createDirectory(at: recURL, withIntermediateDirectories: true)
+        return recURL
     }
 
     static var appSupportDirectory: URL {
-        let url = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)
-            .first!.appendingPathComponent("RECAP", isDirectory: true)
-        try? FileManager.default.createDirectory(at: url, withIntermediateDirectories: true)
-        return url
+        guard let url = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first else {
+            // Fallback to application support in user's home directory
+            let fallback = FileManager.default.homeDirectoryForCurrentUser
+                .appendingPathComponent("Library/Application Support/RECAP", isDirectory: true)
+            try? FileManager.default.createDirectory(at: fallback, withIntermediateDirectories: true)
+            return fallback
+        }
+        let appURL = url.appendingPathComponent("RECAP", isDirectory: true)
+        try? FileManager.default.createDirectory(at: appURL, withIntermediateDirectories: true)
+        return appURL
     }
 
     // Recording

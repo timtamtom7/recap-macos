@@ -25,6 +25,8 @@ struct ControlBarView: View {
             }
             .menuStyle(.borderlessButton)
             .frame(minWidth: 150)
+            .accessibilityLabel("Display selector")
+            .accessibilityHint(appState.selectedDisplay == nil ? "No display selected. Opens display picker." : "Selected: \(appState.selectedDisplay?.name ?? "")")
 
             Rectangle()
                 .fill(Color(NSColor.separatorColor))
@@ -43,12 +45,15 @@ struct ControlBarView: View {
                         .clipShape(Capsule())
                 }
                 .buttonStyle(.plain)
+                .accessibilityLabel("Start Recording")
+                .accessibilityHint("Begins screen recording with the selected display")
             } else if appState.recordingState == .stopping {
                 ProgressView()
                     .scaleEffect(1.2)
                 Text("Saving...")
                     .font(.body)
                     .foregroundColor(.secondary)
+                    .accessibilityLabel("Saving recording")
             } else {
                 Button(action: { appState.togglePause() }) {
                     Image(systemName: appState.recordingState == .paused ? "play.circle.fill" : "pause.circle.fill")
@@ -56,6 +61,8 @@ struct ControlBarView: View {
                         .foregroundColor(.orange)
                 }
                 .buttonStyle(.plain)
+                .accessibilityLabel(appState.recordingState == .paused ? "Resume Recording" : "Pause Recording")
+                .accessibilityHint(appState.recordingState == .paused ? "Resumes the current recording" : "Pauses the current recording")
 
                 Button(action: { appState.stopRecording() }) {
                     Image(systemName: "stop.circle.fill")
@@ -63,6 +70,8 @@ struct ControlBarView: View {
                         .foregroundColor(.red)
                 }
                 .buttonStyle(.plain)
+                .accessibilityLabel("Stop Recording")
+                .accessibilityHint("Stops and saves the current recording")
             }
 
             Spacer()
@@ -72,15 +81,17 @@ struct ControlBarView: View {
                     .font(.title3.weight(.medium))
             }
             .buttonStyle(.plain)
+            .accessibilityLabel("Settings")
+            .accessibilityHint("Opens RECAP settings")
         }
         .padding(.horizontal, 24)
         .padding(.vertical, 16)
         .background(
-            RoundedRectangle(cornerRadius: 12)
+            RoundedRectangle(cornerRadius: DesignTokens.CornerRadius.section)
                 .fill(Color(NSColor.controlBackgroundColor))
         )
         .overlay(
-            RoundedRectangle(cornerRadius: 12)
+            RoundedRectangle(cornerRadius: DesignTokens.CornerRadius.section)
                 .stroke(Color(NSColor.separatorColor), lineWidth: 1)
         )
     }

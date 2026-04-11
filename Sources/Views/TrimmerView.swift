@@ -193,5 +193,8 @@ struct TrimHandle: View {
                 .fill(Color.accentColor)
                 .frame(width: 16, height: 2)
         }
+        .accessibilityLabel(isIn ? "Trim start handle" : "Trim end handle")
+        .accessibilityHint("Use arrow keys to adjust trim point")
+        .accessibilityAddTraits(.allowsDirectInteraction)
     }
 }

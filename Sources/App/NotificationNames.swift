@@ -8,6 +8,7 @@ extension Notification.Name {
     static let stopRecording = Notification.Name("stopRecording")
     static let togglePause = Notification.Name("togglePause")
     static let stopRecordingDueToDiskSpace = Notification.Name("stopRecordingDueToDiskSpace")
+    static let screenRecordingPermissionRevoked = Notification.Name("screenRecordingPermissionRevoked")
 
     // Navigation
     static let openSettings = Notification.Name("openSettings")

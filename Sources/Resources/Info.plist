@@ -32,5 +32,12 @@
     <string>RECAP needs screen recording access to capture your screen.</string>
     <key>NSMicrophoneUsageDescription</key>
     <string>RECAP needs microphone access to record audio with your screen recording.</string>
+    <key>NSUserActivityTypes</key>
+    <array>
+        <string>StartRecordingIntent</string>
+        <string>StopRecordingIntent</string>
+        <string>GetRecentRecordingsIntent</string>
+        <string>ExportRecordingIntent</string>
+    </array>
 </dict>
 </plist>

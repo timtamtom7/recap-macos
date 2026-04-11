@@ -26,6 +26,40 @@ class AppState: ObservableObject {
 
     private init() {
         loadRecentRecordings()
+        observeScreenRecordingPermissionRevoked()
+    }
+
+    private func observeScreenRecordingPermissionRevoked() {
+        NotificationCenter.default.publisher(for: .screenRecordingPermissionRevoked)
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] _ in
+                self?.handlePermissionRevoked()
+            }
+            .store(in: &cancellables)
+    }
+
+    private func handlePermissionRevoked() {
+        // Stop recording if in progress (permission was revoked)
+        if recordingState == .recording || recordingState == .paused {
+            stopRecording()
+        }
+        // Show alert to user
+        showPermissionRevokedAlert()
+    }
+
+    private func showPermissionRevokedAlert() {
+        let alert = NSAlert()
+        alert.messageText = "Screen Recording Permission Revoked"
+        alert.informativeText = "Screen recording permission was removed. RECAP cannot capture the screen. Please re-enable it in System Settings > Privacy & Security > Screen Recording."
+        alert.alertStyle = .warning
+        alert.addButton(withTitle: "Open System Settings")
+        alert.addButton(withTitle: "Cancel")
+
+        if alert.runModal() == .alertFirstButtonReturn {
+            if let url = URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy_ScreenCapture") {
+                NSWorkspace.shared.open(url)
+            }
+        }
     }
 
     var isRecording: Bool {
@@ -167,8 +201,26 @@ class AppState: ObservableObject {
     private func getMainDisplay() -> DisplayInfo? {
         let screen = NSScreen.main
         guard let screen = screen else { return nil }
-        let displayID = CGMainDisplayID()
-        return DisplayInfo(id: displayID, name: "Main Display", bounds: screen.frame)
+
+        // Use CGGetActiveDisplayList to safely enumerate displays and find the main one
+        var displayCount: UInt32 = 0
+        CGGetActiveDisplayList(0, nil, &displayCount)
+
+        guard displayCount > 0 else { return nil }
+
+        var activeDisplays = [CGDirectDisplayID](repeating: 0, count: Int(displayCount))
+        CGGetActiveDisplayList(displayCount, &activeDisplays, &displayCount)
+
+        // Find the main display (CGDisplayIsMain returns non-zero for main display)
+        let mainDisplayID = CGMainDisplayID()
+        for displayID in activeDisplays {
+            if CGDisplayIsMain(displayID) != 0 {
+                return DisplayInfo(id: displayID, name: "Main Display", bounds: screen.frame)
+            }
+        }
+
+        // Fallback: if we can't determine main via CGDisplayIsMain, use the first active display
+        return DisplayInfo(id: activeDisplays[0], name: "Main Display", bounds: screen.frame)
     }
 
     var formattedElapsedTime: String {

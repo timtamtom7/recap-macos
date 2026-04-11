@@ -138,26 +138,34 @@ struct SettingsView: View {
 
                 settingsSection(title: "Recording", icon: "record.circle") {
                     Toggle("Include Microphone Audio", isOn: $includeAudio)
+                        .accessibilityLabel("Include Microphone Audio")
+                        .accessibilityValue(includeAudio ? "On" : "Off")
 
                     Picker("Frame Rate", selection: $frameRate) {
                         Text("24 fps").tag(24)
                         Text("30 fps").tag(30)
                         Text("60 fps").tag(60)
                     }
+                    .accessibilityLabel("Frame Rate")
 
                     Picker("Video Codec", selection: $selectedCodec) {
                         Text("ProRes 422 (Best Quality)").tag(Codec.prores422.rawValue)
                         Text("H.264 (Smaller File)").tag(Codec.h264.rawValue)
                     }
+                    .accessibilityLabel("Video Codec")
                 }
 
                 settingsSection(title: "Timer", icon: "timer") {
                     Stepper("Countdown: \(countdownSeconds)s", value: $countdownSeconds, in: 0...10)
+                        .accessibilityLabel("Countdown seconds: \(countdownSeconds)")
 
                     Toggle("Auto-stop Recording", isOn: $autoStopRecording)
+                        .accessibilityLabel("Auto-stop Recording")
+                        .accessibilityValue(autoStopRecording ? "On" : "Off")
 
                     if autoStopRecording {
                         Stepper("Max Duration: \(maxRecordingDuration / 60) min", value: $maxRecordingDuration, in: 60...14400, step: 60)
+                            .accessibilityLabel("Maximum recording duration: \(maxRecordingDuration / 60) minutes")
                     }
                 }
 
@@ -167,6 +175,7 @@ struct SettingsView: View {
                             Text(preset.rawValue).tag(preset.rawValue)
                         }
                     }
+                    .accessibilityLabel("Default Export Preset")
                 }
 
                 settingsSection(title: "About", icon: "info.circle") {
@@ -176,6 +185,7 @@ struct SettingsView: View {
                         Text("1.0.0")
                             .foregroundColor(.secondary)
                     }
+                    .accessibilityLabel("Version 1.0.0")
                 }
             }
             .padding(24)

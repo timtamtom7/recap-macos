@@ -41,6 +41,15 @@ final class ClickDetector {
 
     func startDetecting(onClick: @escaping (CGPoint, Bool) -> Void) {
         guard eventTap == nil else { return }
+
+        // Check accessibility permissions before creating the event tap
+        let trusted = AXIsProcessTrusted()
+        guard trusted else {
+            Log.capture.error("ClickDetector: Accessibility permissions not granted. Click highlighting will not work.")
+            showAccessibilityPermissionAlert()
+            return
+        }
+
         self.onClickHandler = onClick
 
         let eventMask: CGEventMask = (1 << CGEventType.leftMouseDown.rawValue) | (1 << CGEventType.rightMouseDown.rawValue)
@@ -64,11 +73,31 @@ final class ClickDetector {
             userInfo: detectorPtr
         )
 
-        guard let tap = eventTap else { return }
+        guard let tap = eventTap else {
+            Log.capture.error("ClickDetector: Failed to create event tap (even after accessibility check)")
+            return
+        }
 
         runLoopSource = CFMachPortCreateRunLoopSource(kCFAllocatorDefault, tap, 0)
         CFRunLoopAddSource(CFRunLoopGetCurrent(), runLoopSource, .commonModes)
         CGEvent.tapEnable(tap: tap, enable: true)
+    }
+
+    private func showAccessibilityPermissionAlert() {
+        DispatchQueue.main.async {
+            let alert = NSAlert()
+            alert.messageText = "Accessibility Permission Required"
+            alert.informativeText = "RECAP needs Accessibility permission to show click highlights. Please grant access in System Settings > Privacy & Security > Accessibility."
+            alert.alertStyle = .warning
+            alert.addButton(withTitle: "Open System Settings")
+            alert.addButton(withTitle: "Cancel")
+
+            if alert.runModal() == .alertFirstButtonReturn {
+                if let url = URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy_Accessibility") {
+                    NSWorkspace.shared.open(url)
+                }
+            }
+        }
     }
 
     func stop() {

@@ -31,6 +31,9 @@ struct RecordingView: View {
             DisplayPickerView()
                 .environmentObject(appState)
         }
+        .onReceive(NotificationCenter.default.publisher(for: .showDisplayPicker)) { _ in
+            self.showDisplayPicker = true
+        }
     }
 
     private var previewCard: some View {
@@ -68,11 +71,11 @@ struct RecordingView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(
-            RoundedRectangle(cornerRadius: 16)
+            RoundedRectangle(cornerRadius: DesignTokens.CornerRadius.large)
                 .fill(Color(NSColor.controlBackgroundColor))
         )
         .overlay(
-            RoundedRectangle(cornerRadius: 16)
+            RoundedRectangle(cornerRadius: DesignTokens.CornerRadius.large)
                 .stroke(Color(NSColor.separatorColor), lineWidth: 1)
         )
     }
@@ -91,7 +94,7 @@ struct RecordingView: View {
         .padding(.horizontal, 24)
         .padding(.vertical, 12)
         .background(
-            RoundedRectangle(cornerRadius: 12)
+            RoundedRectangle(cornerRadius: DesignTokens.CornerRadius.section)
                 .fill(.ultraThinMaterial)
         )
     }
@@ -120,14 +123,18 @@ struct PulseModifier: ViewModifier {
     @State private var scale: CGFloat = 1.0
 
     func body(content: Content) -> some View {
+        let reduceMotion = NSWorkspace.shared.accessibilityDisplay.shouldReduceMotion
+
         content
-            .scaleEffect(scale)
+            .scaleEffect(reduceMotion ? 1.0 : scale)
             .animation(
-                isAnimating ? Animation.easeInOut(duration: 0.8).repeatForever(autoreverses: true) : .default,
+                isAnimating && !reduceMotion
+                    ? Animation.easeInOut(duration: 0.8).repeatForever(autoreverses: true)
+                    : .default,
                 value: scale
             )
             .onAppear {
-                if isAnimating {
+                if isAnimating && !reduceMotion {
                     scale = 1.2
                 }
             }
@@ -139,7 +146,7 @@ struct RecordingThumbnail: View {
 
     var body: some View {
         VStack(spacing: 8) {
-            RoundedRectangle(cornerRadius: 8)
+            RoundedRectangle(cornerRadius: DesignTokens.CornerRadius.card)
                 .fill(Color(NSColor.controlBackgroundColor))
                 .frame(width: 160, height: 90)
                 .overlay {
@@ -148,7 +155,7 @@ struct RecordingThumbnail: View {
                         .foregroundColor(.secondary)
                 }
                 .overlay(
-                    RoundedRectangle(cornerRadius: 8)
+                    RoundedRectangle(cornerRadius: DesignTokens.CornerRadius.card)
                         .stroke(Color(NSColor.separatorColor), lineWidth: 0.5)
                 )
 
@@ -161,6 +168,7 @@ struct RecordingThumbnail: View {
                     .font(.caption2)
                     .foregroundColor(.secondary)
             }
+            .accessibilityLabel("\(recording.title), \(recording.formattedDuration), recorded \(recording.formattedDate)")
         }
     }
 }
