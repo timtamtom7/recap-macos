@@ -71,11 +71,11 @@ struct RecordingView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(
-            RoundedRectangle(cornerRadius: DesignTokens.CornerRadius.large)
+            RoundedRectangle(cornerRadius: 16)
                 .fill(Color(NSColor.controlBackgroundColor))
         )
         .overlay(
-            RoundedRectangle(cornerRadius: DesignTokens.CornerRadius.large)
+            RoundedRectangle(cornerRadius: 16)
                 .stroke(Color(NSColor.separatorColor), lineWidth: 1)
         )
     }
@@ -94,7 +94,7 @@ struct RecordingView: View {
         .padding(.horizontal, 24)
         .padding(.vertical, 12)
         .background(
-            RoundedRectangle(cornerRadius: DesignTokens.CornerRadius.section)
+            RoundedRectangle(cornerRadius: 12)
                 .fill(.ultraThinMaterial)
         )
     }
@@ -121,10 +121,9 @@ struct RecordingView: View {
 struct PulseModifier: ViewModifier {
     let isAnimating: Bool
     @State private var scale: CGFloat = 1.0
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     func body(content: Content) -> some View {
-        let reduceMotion = NSWorkspace.shared.accessibilityDisplay.shouldReduceMotion
-
         content
             .scaleEffect(reduceMotion ? 1.0 : scale)
             .animation(
@@ -146,7 +145,7 @@ struct RecordingThumbnail: View {
 
     var body: some View {
         VStack(spacing: 8) {
-            RoundedRectangle(cornerRadius: DesignTokens.CornerRadius.card)
+            RoundedRectangle(cornerRadius: 8)
                 .fill(Color(NSColor.controlBackgroundColor))
                 .frame(width: 160, height: 90)
                 .overlay {
@@ -155,7 +154,7 @@ struct RecordingThumbnail: View {
                         .foregroundColor(.secondary)
                 }
                 .overlay(
-                    RoundedRectangle(cornerRadius: DesignTokens.CornerRadius.card)
+                    RoundedRectangle(cornerRadius: 8)
                         .stroke(Color(NSColor.separatorColor), lineWidth: 0.5)
                 )
 
