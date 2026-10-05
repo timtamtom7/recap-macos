@@ -37,7 +37,7 @@ class MenuBarController: NSObject {
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(updateIcon),
-            name: Notification.Name("recordingStateChanged"),
+            name: .recordingStateChanged,
             object: nil
         )
     }
@@ -74,15 +74,15 @@ class MenuBarController: NSObject {
     }
 
     @objc private func startRecording() {
-        NotificationCenter.default.post(name: Notification.Name("startRecording"), object: nil)
+        NotificationCenter.default.post(name: .startRecording, object: nil)
     }
 
     @objc private func togglePause() {
-        NotificationCenter.default.post(name: Notification.Name("togglePause"), object: nil)
+        NotificationCenter.default.post(name: .togglePause, object: nil)
     }
 
     @objc private func stopRecording() {
-        NotificationCenter.default.post(name: Notification.Name("stopRecording"), object: nil)
+        NotificationCenter.default.post(name: .stopRecording, object: nil)
     }
 
     @objc private func openRECAP() {
@@ -90,7 +90,7 @@ class MenuBarController: NSObject {
     }
 
     @objc private func openSettings() {
-        NotificationCenter.default.post(name: Notification.Name("openSettings"), object: nil)
+        NotificationCenter.default.post(name: .openSettings, object: nil)
     }
 
     @objc private func quitRECAP() {
@@ -141,7 +141,7 @@ struct EnhancedMenuBarPopoverView: View {
                 .font(.headline)
             Spacer()
             Button(action: {
-                NotificationCenter.default.post(name: Notification.Name("openSettings"), object: nil)
+                NotificationCenter.default.post(name: .openSettings, object: nil)
             }) {
                 Image(systemName: "gear")
             }
@@ -166,13 +166,13 @@ struct EnhancedMenuBarPopoverView: View {
 
             HStack(spacing: 12) {
                 Button(appState.recordingState == .paused ? "Resume" : "Pause") {
-                    NotificationCenter.default.post(name: Notification.Name("togglePause"), object: nil)
+                    NotificationCenter.default.post(name: .togglePause, object: nil)
                 }
                 .buttonStyle(.plain)
                 .foregroundColor(.accentColor)
 
                 Button("Stop") {
-                    NotificationCenter.default.post(name: Notification.Name("stopRecording"), object: nil)
+                    NotificationCenter.default.post(name: .stopRecording, object: nil)
                 }
                 .buttonStyle(.plain)
                 .foregroundColor(.red)
@@ -181,7 +181,7 @@ struct EnhancedMenuBarPopoverView: View {
         }
         .padding()
         .background(Color(NSColor.controlBackgroundColor))
-        .cornerRadius(8)
+        .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 
     private var scheduledRecordingsCard: some View {
@@ -209,7 +209,7 @@ struct EnhancedMenuBarPopoverView: View {
         }
         .padding()
         .background(Color(NSColor.controlBackgroundColor))
-        .cornerRadius(8)
+        .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 
     private var recentRecordingsCard: some View {
@@ -242,7 +242,7 @@ struct EnhancedMenuBarPopoverView: View {
         }
         .padding()
         .background(Color(NSColor.controlBackgroundColor))
-        .cornerRadius(8)
+        .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 
     private var footer: some View {
@@ -255,7 +255,7 @@ struct EnhancedMenuBarPopoverView: View {
             Spacer()
             Button("All Recordings") {
                 NSApp.activate(ignoringOtherApps: true)
-                NotificationCenter.default.post(name: Notification.Name("openLibrary"), object: nil)
+                NotificationCenter.default.post(name: .openLibrary, object: nil)
             }
             .buttonStyle(.plain)
             .foregroundColor(.accentColor)

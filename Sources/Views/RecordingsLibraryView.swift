@@ -12,35 +12,33 @@ struct RecordingsLibraryView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            // Toolbar
             HStack {
                 Text("Recordings Library")
-                    .font(.title2)
-                    .fontWeight(.bold)
+                    .font(.title2.weight(.bold))
 
                 Spacer()
 
                 Picker("View", selection: $viewMode) {
-                    Image(systemName: "square.grid.2x2").tag(ViewMode.grid)
+                    Image(systemName: "square.grid.2x2.fill").tag(ViewMode.grid)
                     Image(systemName: "list.bullet").tag(ViewMode.list)
                 }
                 .pickerStyle(.segmented)
                 .frame(width: 100)
             }
-            .padding()
+            .padding(.horizontal, 24)
+            .padding(.vertical, 16)
 
             Divider()
 
-            // Content
             if appState.recentRecordings.isEmpty {
-                VStack(spacing: 12) {
-                    Image(systemName: "film.stack")
+                VStack(spacing: 16) {
+                    Image(systemName: "film.stack.fill")
                         .font(.system(size: 48))
                         .foregroundColor(.secondary)
                     Text("No Recordings Yet")
-                        .font(.headline)
+                        .font(.title3.weight(.semibold))
                     Text("Start recording to see your files here")
-                        .font(.subheadline)
+                        .font(.body)
                         .foregroundColor(.secondary)
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -68,9 +66,9 @@ struct RecordingsLibraryView: View {
                                     }
                             }
                         }
-                        .padding()
+                        .padding(24)
                     } else {
-                        LazyVStack(spacing: 1) {
+                        LazyVStack(spacing: 8) {
                             ForEach(appState.recentRecordings) { recording in
                                 RecordingRowView(recording: recording)
                                     .onTapGesture {
@@ -91,9 +89,11 @@ struct RecordingsLibraryView: View {
                                     }
                             }
                         }
-                        .padding()
+                        .padding(24)
                     }
                 }
+                .scrollContentBackground(.hidden)
+                .background(Color(NSColor.windowBackgroundColor))
             }
         }
         .sheet(isPresented: $showExportSheet) {
@@ -117,20 +117,23 @@ struct RecordingGridItem: View {
     let recording: Recording
 
     var body: some View {
-        VStack(spacing: 8) {
+        VStack(spacing: 12) {
             RoundedRectangle(cornerRadius: 8)
-                .fill(Color.gray.opacity(0.2))
+                .fill(Color(NSColor.controlBackgroundColor))
                 .frame(height: 120)
                 .overlay {
-                    Image(systemName: "film")
+                    Image(systemName: "film.fill")
                         .font(.system(size: 32))
                         .foregroundColor(.secondary)
                 }
+                .overlay(
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(Color(NSColor.separatorColor), lineWidth: 0.5)
+                )
 
-            VStack(spacing: 2) {
+            VStack(spacing: 4) {
                 Text(recording.title)
-                    .font(.subheadline)
-                    .fontWeight(.medium)
+                    .font(.subheadline.weight(.semibold))
                     .lineLimit(1)
 
                 HStack {
@@ -142,9 +145,15 @@ struct RecordingGridItem: View {
                 .foregroundColor(.secondary)
             }
         }
-        .padding()
-        .background(Color(NSColor.controlBackgroundColor))
-        .clipShape(RoundedRectangle(cornerRadius: 12))
+        .padding(16)
+        .background(
+            RoundedRectangle(cornerRadius: 12)
+                .fill(Color(NSColor.controlBackgroundColor))
+        )
+        .overlay(
+            RoundedRectangle(cornerRadius: 12)
+                .stroke(Color(NSColor.separatorColor), lineWidth: 1)
+        )
     }
 }
 
@@ -153,18 +162,21 @@ struct RecordingRowView: View {
 
     var body: some View {
         HStack(spacing: 16) {
-            RoundedRectangle(cornerRadius: 6)
-                .fill(Color.gray.opacity(0.2))
+            RoundedRectangle(cornerRadius: 8)
+                .fill(Color(NSColor.controlBackgroundColor))
                 .frame(width: 120, height: 68)
                 .overlay {
-                    Image(systemName: "film")
+                    Image(systemName: "film.fill")
                         .foregroundColor(.secondary)
                 }
+                .overlay(
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(Color(NSColor.separatorColor), lineWidth: 0.5)
+                )
 
             VStack(alignment: .leading, spacing: 4) {
                 Text(recording.title)
-                    .font(.subheadline)
-                    .fontWeight(.medium)
+                    .font(.subheadline.weight(.semibold))
 
                 Text(recording.formattedDate)
                     .font(.caption)
@@ -186,7 +198,14 @@ struct RecordingRowView: View {
             Image(systemName: "chevron.right")
                 .foregroundColor(.secondary)
         }
-        .padding()
-        .background(Color(NSColor.controlBackgroundColor))
+        .padding(16)
+        .background(
+            RoundedRectangle(cornerRadius: 12)
+                .fill(Color(NSColor.controlBackgroundColor))
+        )
+        .overlay(
+            RoundedRectangle(cornerRadius: 12)
+                .stroke(Color(NSColor.separatorColor), lineWidth: 1)
+        )
     }
 }

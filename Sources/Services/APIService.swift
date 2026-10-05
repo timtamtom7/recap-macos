@@ -1,6 +1,7 @@
 import Foundation
 import Combine
 import Network
+import os.log
 
 // MARK: - Recap R14: REST API (port 8778) & Webhooks
 
@@ -8,7 +9,7 @@ final class RecapAPIService: ObservableObject {
     static let shared = RecapAPIService()
 
     private var listener: NWListener?
-    private let port: UInt16 = 8778
+    private let port: UInt16 = Configuration.apiPort
     @Published var isRunning = false
 
     private init() {}
@@ -26,7 +27,7 @@ final class RecapAPIService: ObservableObject {
                 self?.handle(conn)
             }
             listener?.start(queue: .global())
-        } catch { print("RecapAPI error: \(error)") }
+        } catch { Log.api.error("RecapAPI error: \(error.localizedDescription)") }
     }
 
     func stop() {

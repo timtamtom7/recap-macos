@@ -47,23 +47,27 @@ struct MenuBarPopoverView: View {
                     }
                     .buttonStyle(.borderedProminent)
                     .tint(.red)
+                    .accessibilityLabel("Start Recording")
                 } else if appState.recordingState != .stopping {
                     Button(action: { appState.togglePause() }) {
                         Image(systemName: appState.recordingState == .paused ? "play.fill" : "pause.fill")
                     }
                     .buttonStyle(.bordered)
+                    .accessibilityLabel(appState.recordingState == .paused ? "Resume Recording" : "Pause Recording")
 
                     Button(action: { appState.stopRecording() }) {
                         Image(systemName: "stop.fill")
                     }
                     .buttonStyle(.bordered)
                     .tint(.red)
+                    .accessibilityLabel("Stop Recording")
                 } else {
                     ProgressView()
                         .scaleEffect(0.8)
                     Text("Saving...")
                         .font(.caption)
                         .foregroundColor(.secondary)
+                        .accessibilityLabel("Saving recording")
                 }
             }
             .padding()
@@ -102,6 +106,7 @@ struct MenuBarPopoverView: View {
                                 .padding(.vertical, 6)
                             }
                             .buttonStyle(.plain)
+                            .accessibilityLabel("\(recording.title), \(recording.formattedDuration)")
                         }
                     }
                 }
@@ -117,6 +122,7 @@ struct MenuBarPopoverView: View {
                 }
                 .buttonStyle(.plain)
                 .font(.caption)
+                .accessibilityLabel("Open RECAP")
 
                 Spacer()
 
@@ -125,15 +131,19 @@ struct MenuBarPopoverView: View {
                 }
                 .buttonStyle(.plain)
                 .font(.caption)
+                .accessibilityLabel("Settings")
 
                 Button("Quit") {
                     NSApp.terminate(nil)
                 }
                 .buttonStyle(.plain)
                 .font(.caption)
+                .accessibilityLabel("Quit RECAP")
             }
             .padding()
         }
         .frame(width: 280)
+        .accessibilityElement(children: .contain)
+        .accessibilityLabel("RECAP Menu Bar Popover")
     }
 }

@@ -1,5 +1,6 @@
 import Foundation
 import UserNotifications
+import os.log
 
 struct ScheduledRecording: Identifiable, Codable {
     let id: UUID
@@ -141,27 +142,34 @@ final class ScheduledRecordingService: ObservableObject {
             trigger: trigger
         )
 
-        UNUserNotificationCenter.current().add(request)
+        UNUserNotificationCenter.current().add(request) { error in
+            if let error = error {
+                Log.schedule.error("Failed to schedule notification: \(error.localizedDescription)")
+            }
+        }
     }
 
     private func loadScheduledRecordings() {
-        guard let data = UserDefaults.standard.data(forKey: "scheduledRecordings"),
-              let recordings = try? JSONDecoder().decode([ScheduledRecording].self, from: data) else {
+        guard let data = UserDefaults.standard.data(forKey: "scheduledRecordings") else {
             return
         }
-        scheduledRecordings = recordings
-        for recording in recordings where recording.isEnabled {
-            scheduleRecording(recording)
+        do {
+            let recordings = try JSONDecoder().decode([ScheduledRecording].self, from: data)
+            scheduledRecordings = recordings
+            for recording in recordings where recording.isEnabled {
+                scheduleRecording(recording)
+            }
+        } catch {
+            Log.schedule.error("Failed to load scheduled recordings: \(error.localizedDescription)")
         }
     }
 
     private func saveScheduledRecordings() {
-        if let data = try? JSONEncoder().encode(scheduledRecordings) {
+        do {
+            let data = try JSONEncoder().encode(scheduledRecordings)
             UserDefaults.standard.set(data, forKey: "scheduledRecordings")
+        } catch {
+            Log.schedule.error("Failed to save scheduled recordings: \(error.localizedDescription)")
         }
     }
-}
-
-extension Notification.Name {
-    static let startScheduledRecording = Notification.Name("startScheduledRecording")
 }

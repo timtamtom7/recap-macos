@@ -131,6 +131,6 @@ struct AnnotationEditorView: View {
         }
         .padding(8)
         .background(Color(NSColor.controlBackgroundColor))
-        .cornerRadius(4)
+        .clipShape(RoundedRectangle(cornerRadius: 4))
     }
 }

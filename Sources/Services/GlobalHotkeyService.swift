@@ -33,6 +33,14 @@ final class GlobalHotkeyService: ObservableObject {
     func start() {
         guard eventTap == nil else { return }
 
+        // Check accessibility permissions before creating the event tap
+        let trusted = AXIsProcessTrusted()
+        guard trusted else {
+            Log.general.error("GlobalHotkeyService: Accessibility permissions not granted. Global hotkeys will not work.")
+            showAccessibilityPermissionAlert()
+            return
+        }
+
         let eventMask: CGEventMask = (1 << CGEventType.keyDown.rawValue)
         let servicePtr = Unmanaged.passUnretained(self).toOpaque()
 
@@ -55,7 +63,7 @@ final class GlobalHotkeyService: ObservableObject {
                 )
                 for hotkey in service.hotkeys {
                     if hotkey.keyCode == keyCode && hotkey.modifiers == modMask {
-                        DispatchQueue.main.async { hotkey.action() }
+                        DispatchQueue.main.async { @MainActor in hotkey.action() }
                         return nil
                     }
                 }
@@ -64,13 +72,33 @@ final class GlobalHotkeyService: ObservableObject {
             userInfo: servicePtr
         )
 
-        guard let tap = eventTap else { return }
+        guard let tap = eventTap else {
+            Log.general.error("GlobalHotkeyService: Failed to create event tap (even after accessibility check)")
+            return
+        }
 
         runLoopSource = CFMachPortCreateRunLoopSource(kCFAllocatorDefault, tap, 0)
         CFRunLoopAddSource(CFRunLoopGetCurrent(), runLoopSource, .commonModes)
         CGEvent.tapEnable(tap: tap, enable: true)
 
         isEnabled = true
+    }
+
+    private func showAccessibilityPermissionAlert() {
+        DispatchQueue.main.async {
+            let alert = NSAlert()
+            alert.messageText = "Accessibility Permission Required"
+            alert.informativeText = "RECAP needs Accessibility permission to enable global keyboard shortcuts. Please grant access in System Settings > Privacy & Security > Accessibility."
+            alert.alertStyle = .warning
+            alert.addButton(withTitle: "Open System Settings")
+            alert.addButton(withTitle: "Cancel")
+
+            if alert.runModal() == .alertFirstButtonReturn {
+                if let url = URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy_Accessibility") {
+                    NSWorkspace.shared.open(url)
+                }
+            }
+        }
     }
 
     func stop() {

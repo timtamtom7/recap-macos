@@ -4,24 +4,8 @@ import AppKit
 
 final class MultiDisplayCaptureService: ObservableObject {
     @Published var availableDisplays: [DisplayInfo] = []
-    @Published var selectedDisplays: Set<UUID> = []
+    @Published var selectedDisplays: Set<CGDirectDisplayID> = []
     @Published var compositeLayout: CompositeLayout = .single
-
-    struct DisplayInfo: Identifiable, Hashable {
-        let id: UUID
-        let displayId: CGDirectDisplayID
-        let name: String
-        let resolution: CGSize
-        let isMain: Bool
-
-        func hash(into hasher: inout Hasher) {
-            hasher.combine(id)
-        }
-
-        static func == (lhs: DisplayInfo, rhs: DisplayInfo) -> Bool {
-            lhs.id == rhs.id
-        }
-    }
 
     enum CompositeLayout: String, CaseIterable, Codable {
         case single = "Single"
@@ -50,11 +34,9 @@ final class MultiDisplayCaptureService: ObservableObject {
             let name = isMain ? "Main Display" : "Display \(displays.count + 1)"
 
             displays.append(DisplayInfo(
-                id: UUID(),
-                displayId: displayId,
+                id: displayId,
                 name: name,
-                resolution: bounds.size,
-                isMain: isMain
+                bounds: bounds
             ))
         }
 
@@ -64,8 +46,8 @@ final class MultiDisplayCaptureService: ObservableObject {
     }
 
     func captureSession(for display: DisplayInfo) -> AVCaptureScreenInput? {
-        guard let input = AVCaptureScreenInput(displayID: display.displayId) else { return nil }
-        input.minFrameDuration = CMTime(value: 1, timescale: 60)
+        guard let input = AVCaptureScreenInput(displayID: display.id) else { return nil }
+        input.minFrameDuration = CMTime(value: 1, timescale: CMTimeScale(Configuration.defaultFrameRate * 2))
         return input
     }
 

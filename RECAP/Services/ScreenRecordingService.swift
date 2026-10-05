@@ -36,9 +36,25 @@ class ScreenCaptureService: NSObject, ObservableObject {
     override init() {
         super.init()
         loadRecordings()
+        observeScreenRecordingPermissionChanges()
     }
 
-    // MARK: - Permissions
+    private func observeScreenRecordingPermissionChanges() {
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(handleScreenRecordingStatusChange),
+            name: NSApplication.didChangeScreenRecordingStatusNotification,
+            object: nil
+        )
+    }
+
+    @objc private func handleScreenRecordingStatusChange() {
+        let hasPermission = CGPreflightScreenCaptureAccess()
+        if !hasPermission && recordingState == .recording {
+            // Permission was revoked during recording - stop and notify
+            NotificationCenter.default.post(name: .screenRecordingPermissionRevoked, object: nil)
+        }
+    }
 
     func hasScreenRecordingPermission() -> Bool {
         return CGPreflightScreenCaptureAccess()

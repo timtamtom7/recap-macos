@@ -200,11 +200,3 @@ struct RECAPShortcuts: AppShortcutsProvider {
         )
     }
 }
-
-// MARK: - Notification Names
-
-extension Notification.Name {
-    static let startRecording = Notification.Name("RECAPStartRecording")
-    static let stopRecording = Notification.Name("RECAPStopRecording")
-    static let exportRecording = Notification.Name("RECAPExportRecording")
-}

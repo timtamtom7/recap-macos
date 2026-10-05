@@ -1,5 +1,6 @@
 import Foundation
 import SQLite
+import os.log
 
 class RecordingStore {
     static let shared = RecordingStore()
@@ -9,16 +10,13 @@ class RecordingStore {
     private init() {}
 
     func setup() {
-        let appSupport = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-        let recapDir = appSupport.appendingPathComponent("RECAP", isDirectory: true)
-        try? FileManager.default.createDirectory(at: recapDir, withIntermediateDirectories: true)
-        let dbPath = recapDir.appendingPathComponent("recap.db").path
+        let dbPath = Configuration.appSupportDirectory.appendingPathComponent("recap.db").path
 
         do {
             db = try Connection(dbPath)
             try createTables()
         } catch {
-            print("RecordingStore setup failed: \(error)")
+            Log.storage.error("RecordingStore setup failed: \(error.localizedDescription)")
         }
     }
 
@@ -53,6 +51,9 @@ class RecordingStore {
             t.column(resolutionWidth)
             t.column(resolutionHeight)
         })
+
+        try db.run(recordings.createIndex(createdAt, ifNotExists: true))
+        try db.run(recordings.createIndex(id, ifNotExists: true))
     }
 
     func saveRecording(_ recording: Recording) {
@@ -90,11 +91,15 @@ class RecordingStore {
                 resolutionHeight <- Int(recording.resolution.height)
             ))
         } catch {
-            print("Error saving recording: \(error)")
+            Log.storage.error("Error saving recording: \(error.localizedDescription)")
         }
     }
 
     func getRecentRecordings(limit: Int = 10) -> [Recording] {
+        return getRecordings(offset: 0, limit: limit)
+    }
+
+    func getRecordings(offset: Int, limit: Int) -> [Recording] {
         guard let db = db else { return [] }
 
         let recordings = Table("recordings")
@@ -115,12 +120,12 @@ class RecordingStore {
 
         var result: [Recording] = []
         do {
-            let query = recordings.order(createdAt.desc).limit(limit)
+            let query = recordings.order(createdAt.desc).limit(limit, offset: offset)
             for row in try db.prepare(query) {
                 let recording = Recording(
                     id: UUID(uuidString: row[id]) ?? UUID(),
                     title: row[title],
-                    filePath: URL(string: row[filePath])!,
+                    filePath: URL(string: row[filePath]) ?? URL(fileURLWithPath: "/dev/null"),
                     duration: row[durationSeconds],
                     createdAt: formatter.date(from: row[createdAt]) ?? Date(),
                     thumbnailPath: row[thumbnailPath].flatMap { URL(string: $0) },
@@ -136,9 +141,20 @@ class RecordingStore {
                 result.append(recording)
             }
         } catch {
-            print("Error getting recordings: \(error)")
+            Log.storage.error("Error getting recordings: \(error.localizedDescription)")
         }
         return result
+    }
+
+    func getTotalRecordingCount() -> Int {
+        guard let db = db else { return 0 }
+        let recordings = Table("recordings")
+        do {
+            return try db.scalar(recordings.count)
+        } catch {
+            Log.storage.error("Error counting recordings: \(error.localizedDescription)")
+            return 0
+        }
     }
 
     func deleteRecording(_ recordingId: UUID) {
@@ -151,7 +167,7 @@ class RecordingStore {
         do {
             try db.run(recordingRow.delete())
         } catch {
-            print("Error deleting recording: \(error)")
+            Log.storage.error("Error deleting recording: \(error.localizedDescription)")
         }
     }
 }

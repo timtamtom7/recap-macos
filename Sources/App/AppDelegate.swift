@@ -32,6 +32,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if AppState.shared.recordingState == .recording {
             AppState.shared.stopRecording()
         }
+        ClickDetector.shared.stop()
+        GlobalHotkeyService.shared.stop()
     }
 
     private func requestScreenRecordingPermission() {
@@ -44,9 +46,4 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }
         }
     }
-}
-
-extension Notification.Name {
-    static let recordingStateChanged = Notification.Name("recordingStateChanged")
-    static let showDisplayPicker = Notification.Name("showDisplayPicker")
 }
